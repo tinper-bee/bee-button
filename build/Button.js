@@ -13,75 +13,24 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var React = require('react');
 var ReactDOM = require('react-dom');
 var classnames = require('classnames');
-var sizeMap = {
-    small: 'sm',
-    medium: '',
-    large: 'lg'
-},
-    typeMap = {
-    primary: 'primary',
-    outline: 'outline',
-    disabled: 'disabled'
-},
-    clsPrefix = 'neoui-button';
 
-var Button = function (_React$Component) {
-    _inherits(Button, _React$Component);
-
-    function Button(props) {
-        _classCallCheck(this, Button);
-
-        return _possibleConstructorReturn(this, _React$Component.call(this, props));
-    }
-
-    Button.prototype.render = function render() {
-        var props = this.props;
-        var type = props.type;
-        var disabled = props.disabled;
-        var className = props.className;
-        var size = props.size;
-        var children = props.children;
-        var htmlType = props.htmlType;
-
-        var others = _objectWithoutProperties(props, ['type', 'disabled', 'className', 'size', 'children', 'htmlType']);
-
-        type = disabled ? 'disabled' : type;
-        var clsObj = {};
-        if (className) {
-            clsObj[className] = true;
-        }
-        if (sizeMap[size]) {
-            clsObj[clsPrefix + '-' + sizeMap[size]] = true;
-        }
-        var classNames = classnames(clsPrefix, clsPrefix + '-' + typeMap[type], clsObj);
-        return React.createElement(
-            'button',
-            _extends({
-                type: htmlType,
-                className: classNames,
-                disabled: disabled
-            }, others),
-            props.children
-        );
-    };
-
-    return Button;
-}(React.Component);
-
-Button.displayName = 'neoui-react-button';
-Button.propTypes = {
+var propTypes = {
     /**
      * @title 尺寸
      */
-    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
+    size: React.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
     /**
      * @title 样式
      */
     style: React.PropTypes.object,
     /**
+     * @title 形状
+     */
+    shape: React.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+    /**
     * @title 类型
     */
-    type: React.PropTypes.oneOf(['primary', 'secondary', 'outline', 'disabled']),
+    type: React.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
     /**
      * @title 是否禁用
      * @veIgnore
@@ -102,13 +51,91 @@ Button.propTypes = {
      */
     htmlType: React.PropTypes.oneOf(['submit', 'button', 'reset'])
 };
-Button.defaultProps = {
-    size: 'medium',
-    type: 'primary',
+
+var defaultProps = {
+    size: '',
+    type: '',
+    shape: '',
     disabled: false,
     className: '',
     children: 'Button',
     htmlType: 'button'
 };
+
+var sizeMap = {
+    sm: 'sm',
+    xg: 'xg',
+    lg: 'lg'
+},
+    typeMap = {
+    primary: 'primary',
+    accent: 'accent',
+    success: 'success',
+    info: 'info',
+    warning: 'warning',
+    danger: 'danger'
+},
+    shapeMap = {
+    block: 'block',
+    round: 'round',
+    squared: 'squared',
+    floating: 'floating',
+    pillRight: 'pill-right',
+    pillLeft: 'pill-left'
+},
+    clsPrefix = 'u-button';
+
+var Button = function (_React$Component) {
+    _inherits(Button, _React$Component);
+
+    function Button(props) {
+        _classCallCheck(this, Button);
+
+        return _possibleConstructorReturn(this, _React$Component.call(this, props));
+    }
+
+    Button.prototype.render = function render() {
+        var props = this.props;
+        var type = props.type;
+        var shape = props.shape;
+        var disabled = props.disabled;
+        var className = props.className;
+        var size = props.size;
+        var children = props.children;
+        var htmlType = props.htmlType;
+
+        var others = _objectWithoutProperties(props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
+
+        type = disabled ? 'disabled' : type;
+        var clsObj = {};
+        if (className) {
+            clsObj[className] = true;
+        }
+        if (sizeMap[size]) {
+            clsObj[clsPrefix + '-' + sizeMap[size]] = true;
+        }
+        if (shapeMap[shape]) {
+            clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
+        }
+        if (typeMap[type]) {
+            clsObj[clsPrefix + '-' + typeMap[type]] = true;
+        }
+        var classNames = classnames(clsPrefix, clsObj);
+        return React.createElement(
+            'button',
+            _extends({
+                type: htmlType,
+                className: classNames,
+                disabled: disabled
+            }, others),
+            props.children
+        );
+    };
+
+    return Button;
+}(React.Component);
+
+Button.propTypes = propTypes;
+Button.defaultProps = defaultProps;
 
 module.exports = Button;

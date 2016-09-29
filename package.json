@@ -1,22 +1,22 @@
 {
- "name": "neoui-react-button",
- "version": "0.0.3",
- "description": "neoui-react-button ui component for react",
+ "name": "bee-button",
+ "version": "0.0.1",
+ "description": "tinper-bee button ui component for react",
  "keywords": [
   "react",
   "react-component",
-  "react-neoui-react-button",
-  "neoui-react",
-  "iuap-design",
-  "neoui-react-button"
+  "bee-button",
+  "tinper",
+  "bee",
+  "button"
  ],
  "engines": {
   "node": ">=4.0.0"
  },
- "homepage": "https://github.com/iuap-design/neoui-react-button",
+ "homepage": "https://github.com/tinper-bee/button",
  "author": "",
- "repository": "http://github.com/iuap-design/neoui-react-button",
- "bugs": "https://github.com/iuap-design/neoui-react-button/issues",
+ "repository": "http://github.com/tinper-bee/button",
+ "bugs": "https://github.com/tinper-bee/button/issues",
  "license": "MIT",
  "main": "./build/index",
  "config": {
@@ -51,7 +51,6 @@
   "gulp-es3ify": "0.0.0",
   "gulp-just-replace": "~1.0.2",
   "gulp-less": "~3.0.3",
-  "gulp-sass": "^2.3.2",
   "gulp-sourcemaps": "~1.5.2",
   "has-gulplog": "^0.1.0",
   "html-wiring": "~1.2.0",

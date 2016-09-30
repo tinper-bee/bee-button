@@ -1,5 +1,8 @@
-# neoui-react-button
+# button
 
+[![npm version](https://img.shields.io/npm/v/bee-button.svg)](https://www.npmjs.com/package/bee-button)
+[![Build Status](https://img.shields.io/travis/tinper-bee/button/master.svg)](https://travis-ci.org/tinper-bee/button)
+[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/button.svg)](https://david-dm.org/tinper-bee/button#info=devDependencies)
 
 react button component for tinper-bee
 

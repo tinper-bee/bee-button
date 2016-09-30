@@ -4,7 +4,7 @@ import {expect} from 'chai';
 import Button from '../src/index';
 
 describe('Enzyme Shallow', function () {
-  it('Button\'s title should be exist', function () {
+  it('Button should be exist', function () {
     let button = shallow(<Button/>);
     expect(button.hasClass('u-button')).to.equal(true);
   });

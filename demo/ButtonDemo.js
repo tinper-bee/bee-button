@@ -1,9 +1,9 @@
-let Button = require('../src');
-let React = require('react');
-let ReactDOM = require('react-dom');
+import Button from '../src';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 
-class Demo extends React.Component {
+class Demo extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -51,4 +51,4 @@ class Demo extends React.Component {
 	}
 }
 
-module.exports = Demo;
+export default Demo;

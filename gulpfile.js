@@ -1,4 +1,3 @@
-// https://github.com/gulpjs/gulp/tree/master/docs
 var gulp = require('gulp');
 var fs = require('fs');
 var inquirer = require('inquirer');

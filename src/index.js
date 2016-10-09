@@ -1,3 +1,1 @@
-
-
-module.exports = require('./Button');
+export Button from './Button';

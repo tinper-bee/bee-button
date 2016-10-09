@@ -103,7 +103,7 @@ class Button extends React.Component {
                 className={classNames}
                 disabled={disabled}
                 {...others}>
-              {props.children}
+              {this.props.children}
             </button>
         );
     }

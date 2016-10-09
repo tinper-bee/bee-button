@@ -1,38 +1,38 @@
-let React = require('react');
-let ReactDOM = require('react-dom');
-let classnames = require('classnames');
+import  React, { PropTypes } from 'react';
+import ReactDOM from 'react-dom';
+import classnames from 'classnames';
 
 const propTypes = {
   /**
    * @title 尺寸
    */
-  size: React.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
+  size: PropTypes.oneOf(['sm', 'xg', 'lg', '']),
   /**
    * @title 样式
    */
-  style: React.PropTypes.object,
+  style: PropTypes.object,
   /**
    * @title 形状
    */
-  shape: React.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
    /**
    * @title 类型
    */
-  type: React.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+  type: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
   /**
    * @title 是否禁用
    * @veIgnore
    */
-  disabled: React.PropTypes.bool,
+  disabled: PropTypes.bool,
   /**
    * @title 类名
    * @veIgnore
    */
-  className: React.PropTypes.string,
+  className: PropTypes.string,
   /**
    * @title 内容
    */
-  children: React.PropTypes.oneOfType([
+  children: PropTypes.oneOfType([
       React.PropTypes.element,
       React.PropTypes.string
   ]),
@@ -40,7 +40,7 @@ const propTypes = {
    * @title <button> 的 type
    * @veIgnore
    */
-  htmlType: React.PropTypes.oneOf(['submit', 'button', 'reset']),
+  htmlType: PropTypes.oneOf(['submit', 'button', 'reset']),
 }
 
 const defaultProps = {
@@ -49,7 +49,7 @@ const defaultProps = {
   shape: '',
   disabled: false,
   className: '',
-  children: 'Button',
+  children: '',
   htmlType: 'button'
 }
 
@@ -82,9 +82,7 @@ class Button extends React.Component {
         super(props);
     }
     render() {
-        let props = this.props;
-        let {type, shape, disabled, className, size, children, htmlType, ...others} = props;
-        type = disabled ? 'disabled' : type;
+        let {type, shape, disabled, className, size, children, htmlType, ...others} = this.props;
         let clsObj = {};
         if (className) {
             clsObj[className] = true;
@@ -114,4 +112,4 @@ class Button extends React.Component {
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
-module.exports = Button;
+export default Button;

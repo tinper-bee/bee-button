@@ -35,7 +35,8 @@ var reload = browserSync.reload;
 
 var babel = require('gulp-babel');
 
-var less = require('gulp-less');
+var sass = require('gulp-sass');
+
 
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -68,10 +69,10 @@ gulp.task('pack_build', function(cb) {
         })
 });
 
-gulp.task('less_demo', function(cb) {
-    gulp.src(['./demo/**/*.less'])
+gulp.task('sass_demo', function(cb) {
+    gulp.src(['./demo/**/*.scss'])
         .pipe(sourcemaps.init())
-        .pipe(less())
+        .pipe(sass())
         .pipe(concat('demo.css'))
         .pipe(replace([{
             search: /\/\*#\ssourceMappingURL=([^\*\/]+)\.map\s\*\//g,
@@ -79,7 +80,7 @@ gulp.task('less_demo', function(cb) {
         }]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist'));
-    console.info('###### less_demo done ######');
+    console.info('###### sass_demo done ######');
     cb();
 });
 
@@ -87,17 +88,14 @@ gulp.task('reload_by_js', ['pack_demo'], function () {
     reload();
 });
 
-gulp.task('reload_by_component_css', ['less_component'], function () {
-    reload();
-});
 
-gulp.task('reload_by_demo_css', ['less_demo'], function () {
+gulp.task('reload_by_demo_css', ['sass_demo'], function () {
     reload();
 });
 
 gulp.task('server', [
     'pack_demo',
-    'less_demo'
+    'sass_demo'
 ], function() {
     browserSync({
         server: {
@@ -109,9 +107,9 @@ gulp.task('server', [
 
     gulp.watch(['src/**/*.js', 'demo/**/*.js'], ['reload_by_js']);
 
-    gulp.watch('src/**/*.less', ['reload_by_demo_css']);
+    gulp.watch('src/**/*.scss', ['reload_by_demo_css']);
 
-    gulp.watch('demo/**/*.less', ['reload_by_demo_css']);
+    gulp.watch('demo/**/*.scss', ['reload_by_demo_css']);
 
 });
 

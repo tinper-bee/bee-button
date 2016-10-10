@@ -1,6 +1,22 @@
 'use strict';
 
+exports.__esModule = true;
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -10,46 +26,42 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var classnames = require('classnames');
-
 var propTypes = {
     /**
      * @title 尺寸
      */
-    size: React.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
+    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
     /**
      * @title 样式
      */
-    style: React.PropTypes.object,
+    style: _react.PropTypes.object,
     /**
      * @title 形状
      */
-    shape: React.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
     /**
     * @title 类型
     */
-    type: React.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+    type: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
     /**
      * @title 是否禁用
      * @veIgnore
      */
-    disabled: React.PropTypes.bool,
+    disabled: _react.PropTypes.bool,
     /**
      * @title 类名
      * @veIgnore
      */
-    className: React.PropTypes.string,
+    className: _react.PropTypes.string,
     /**
      * @title 内容
      */
-    children: React.PropTypes.oneOfType([React.PropTypes.element, React.PropTypes.string]),
+    children: _react.PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string]),
     /**
      * @title <button> 的 type
      * @veIgnore
      */
-    htmlType: React.PropTypes.oneOf(['submit', 'button', 'reset'])
+    htmlType: _react.PropTypes.oneOf(['submit', 'button', 'reset'])
 };
 
 var defaultProps = {
@@ -58,7 +70,7 @@ var defaultProps = {
     shape: '',
     disabled: false,
     className: '',
-    children: 'Button',
+    children: '',
     htmlType: 'button'
 };
 
@@ -95,18 +107,17 @@ var Button = function (_React$Component) {
     }
 
     Button.prototype.render = function render() {
-        var props = this.props;
-        var type = props.type;
-        var shape = props.shape;
-        var disabled = props.disabled;
-        var className = props.className;
-        var size = props.size;
-        var children = props.children;
-        var htmlType = props.htmlType;
+        var _props = this.props;
+        var type = _props.type;
+        var shape = _props.shape;
+        var disabled = _props.disabled;
+        var className = _props.className;
+        var size = _props.size;
+        var children = _props.children;
+        var htmlType = _props.htmlType;
 
-        var others = _objectWithoutProperties(props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
+        var others = _objectWithoutProperties(_props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
 
-        type = disabled ? 'disabled' : type;
         var clsObj = {};
         if (className) {
             clsObj[className] = true;
@@ -120,22 +131,23 @@ var Button = function (_React$Component) {
         if (typeMap[type]) {
             clsObj[clsPrefix + '-' + typeMap[type]] = true;
         }
-        var classNames = classnames(clsPrefix, clsObj);
-        return React.createElement(
+        var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
+        return _react2["default"].createElement(
             'button',
             _extends({
                 type: htmlType,
                 className: classNames,
                 disabled: disabled
             }, others),
-            props.children
+            this.props.children
         );
     };
 
     return Button;
-}(React.Component);
+}(_react2["default"].Component);
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
-module.exports = Button;
+exports["default"] = Button;
+module.exports = exports['default'];

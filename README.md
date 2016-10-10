@@ -15,16 +15,38 @@ $ npm install
 $ npm run dev
 ```
 
-## Usage
+## 使用
 
+### 使用单独的button包
+#### 组件引入
+先进行下载button包
+```
+npm install --save bee-button
+```
+组件调用
 ```js
-import Button from 'bee-button';
+import { Button } from 'bee-button';
 React.render(<div>
     <div>
         <Button type="primary" size="lg" style={{color: '#000'}}>Button</Button>
     </div>
 </div>, document.getElementById('target'));
 ```
+#### 样式引入
+- 可以使用link引入dist目录下button.css
+```
+<link rel="stylesheet" href="./node_modules/build/bee-button.css">
+```
+- 可以在js中import样式
+```js
+import "./node_modules/src/Button.scss"
+//或是
+import "./node_modules/build/bee-button.css"
+```
+
+### 使用tinper-bee组件库
+(tinper-bee组件库使用方法)[]
+
 
 
 

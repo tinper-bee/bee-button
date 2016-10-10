@@ -1,4 +1,4 @@
-import Button from '../src';
+import { Button } from '../src';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 

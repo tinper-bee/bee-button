@@ -45,7 +45,7 @@ const propTypes = {
 
 const defaultProps = {
   size: '',
-  type: '',
+  type: 'primary',
   shape: '',
   disabled: false,
   className: '',

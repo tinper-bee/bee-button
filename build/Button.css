@@ -66,8 +66,6 @@ $color-accent: $palette-pink-A200 !default;
     border: 0; }
   .u-button:hover {
     background-color: #F7F7F7; }
-  .u-button:focus:not(:active) {
-    background-color: rgba(0,0,0, 0.12); }
   .u-button:active {
     background-color: rgba(158,158,158, 0.40); }
   .u-button.colored {

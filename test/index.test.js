@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow, mount, render} from 'enzyme';
 import {expect} from 'chai';
-import { Button } from '../src/index';
+import Button from '../src/index';
 
 describe('verifiy size', function () {
   it('Button should be exist', function () {

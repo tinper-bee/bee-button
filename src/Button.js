@@ -1,4 +1,4 @@
-import  React, { PropTypes } from 'react';
+import  React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 
@@ -77,7 +77,7 @@ const sizeMap = {
     clsPrefix = 'u-button';
 
 
-class Button extends React.Component {
+class Button extends Component {
     constructor(props) {
         super(props);
     }

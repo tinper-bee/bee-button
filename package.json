@@ -23,7 +23,7 @@
   "port": 6666
  },
  "scripts": {
-  "dev": "bee-tools run dev",
+  "dev": "bee-tools run start",
   "build": "bee-tools run build",
   "lint": "bee-tools run lint",
   "test": "bee-tools run test",
@@ -39,6 +39,8 @@
   "chai": "^3.5.0",
   "enzyme": "^2.4.1",
   "react": "~0.14.0",
+  "console-polyfill": "~0.2.1",
+  "es5-shim": "~4.1.10",
   "react-addons-test-utils": "^15.3.2",
   "react-dom": "~0.14.0"
  }

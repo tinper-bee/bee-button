@@ -1,0 +1,18 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "4"
+  - "6"
+
+env:
+  global:
+    - NODE_ENV=travisci
+    - NPM_CONFIG_PROGRESS="false"
+
+before_install:
+  - npm install
+  - npm install -g bee-tools
+
+script: npm run test && npm run browsers

@@ -12,21 +12,19 @@ react button component for tinper-bee
 
 ### 使用单独的button包
 #### 组件引入
-先进行下载button包
+先进行下载bee-button包
 ```
 npm install --save bee-button
 ```
 组件调用
 ```js
-import { Button } from 'bee-button';
-React.render(<div>
-    <div>
+import Button from 'bee-button';
+React.render(
         <Button type="primary" size="lg" style={{color: '#000'}}>Button</Button>
-    </div>
-</div>, document.getElementById('target'));
+        , document.getElementById('target'));
 ```
 #### 样式引入
-- 可以使用link引入dist目录下button.css
+- 可以使用link引入build目录下button.css
 ```
 <link rel="stylesheet" href="./node_modules/build/bee-button.css">
 ```
@@ -59,8 +57,9 @@ import "./node_modules/build/bee-button.css"
 #### setup develop environment
 
 ```sh
-$ git clone https://github.com/tinper-bee/button
-$ cd button
+$ git clone https://github.com/tinper-bee/bee-button
+$ cd bee-button
+$ npm install -g bee-tools
 $ npm install
 $ npm run dev
 ```

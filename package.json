@@ -28,6 +28,7 @@
   "lint": "bee-tools run lint",
   "test": "bee-tools run test",
   "chrome": "bee-tools run chrome",
+  "coveralls": "bee-tools run coverage",
   "browsers": "bee-tools run browsers",
   "pub": "bee-tools run pub"
  },

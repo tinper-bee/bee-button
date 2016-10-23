@@ -101,13 +101,13 @@ var sizeMap = {
 },
     clsPrefix = 'u-button';
 
-var Button = function (_React$Component) {
-    _inherits(Button, _React$Component);
+var Button = function (_Component) {
+    _inherits(Button, _Component);
 
     function Button(props) {
         _classCallCheck(this, Button);
 
-        return _possibleConstructorReturn(this, _React$Component.call(this, props));
+        return _possibleConstructorReturn(this, _Component.call(this, props));
     }
 
     Button.prototype.render = function render() {
@@ -148,10 +148,24 @@ var Button = function (_React$Component) {
     };
 
     return Button;
-}(_react2["default"].Component);
+}(_react.Component);
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
 exports["default"] = Button;
+module.exports = exports['default'];
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Button = require('./Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+exports["default"] = _Button2["default"];
 module.exports = exports['default'];

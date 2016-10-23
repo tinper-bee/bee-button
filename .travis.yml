@@ -16,7 +16,7 @@ env:
 before_install:
   - npm install -g bee-tools
 
-script: npm run test && npm run browsers
+script: npm run test 
 
 after_script:
     - npm run coveralls

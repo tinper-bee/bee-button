@@ -20,7 +20,7 @@ npm install --save bee-button
 组件调用
 ```js
 import Button from 'bee-button';
-React.render(
+ReactDOM.render(
         <Button type="primary" size="lg" style={{color: '#000'}}>Button</Button>
         , document.getElementById('target'));
 ```

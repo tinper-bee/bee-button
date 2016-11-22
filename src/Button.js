@@ -29,13 +29,7 @@ const propTypes = {
    * @veIgnore
    */
   className: PropTypes.string,
-  /**
-   * @title 内容
-   */
-  children: PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string
-  ]),
+
   /**
    * @title <button> 的 type
    * @veIgnore
@@ -50,7 +44,8 @@ const defaultProps = {
   disabled: false,
   className: '',
   children: '',
-  htmlType: 'button'
+  htmlType: 'button',
+  clsPrefix = 'u-button'
 }
 
 const sizeMap = {
@@ -73,8 +68,7 @@ const sizeMap = {
         floating: 'floating',
         pillRight: 'pill-right',
         pillLeft: 'pill-left'
-    },
-    clsPrefix = 'u-button';
+    };
 
 
 class Button extends Component {
@@ -82,7 +76,14 @@ class Button extends Component {
         super(props);
     }
     render() {
-        let {type, shape, disabled, className, size, children, htmlType, ...others} = this.props;
+        let {type,
+            shape,
+            disabled,
+            className,
+            size,
+            children,
+            htmlType,
+            ...others} = this.props;
         let clsObj = {};
         if (className) {
             clsObj[className] = true;

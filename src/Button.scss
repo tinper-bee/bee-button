@@ -235,7 +235,7 @@ input.u-button[type="submit"] {
 
 
 // Align icons inside buttons with text
-.u-button .uf,.u-button .fa {
+.u-button .uf{
   vertical-align: middle;
 }
 
@@ -268,7 +268,7 @@ input.u-button[type="submit"] {
     min-width: $button-icon-size-mini;
     width: $button-icon-size-mini;
 
-    & .fa {
+    & .uf {
       top: ($button-icon-size-mini - $button-fab-font-size) / 2;
       left: ($button-icon-size-mini - $button-fab-font-size) / 2;
     }

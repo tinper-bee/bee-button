@@ -39,13 +39,13 @@ const propTypes = {
 
 const defaultProps = {
   size: '',
-  type: 'primary',
+  colors: 'primary',
   shape: '',
   disabled: false,
   className: '',
   children: '',
   htmlType: 'button',
-  clsPrefix = 'u-button'
+  clsPrefix: 'u-button'
 
 }
 

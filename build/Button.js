@@ -57,10 +57,7 @@ var propTypes = {
      * @veIgnore
      */
     className: _react.PropTypes.string,
-    /**
-     * @title 内容
-     */
-    children: _react.PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string]),
+
     /**
      * @title <button> 的 type
      * @veIgnore
@@ -70,13 +67,14 @@ var propTypes = {
 
 var defaultProps = {
     size: '',
-    type: 'primary',
+    colors: 'primary',
     shape: '',
     disabled: false,
     className: '',
     children: '',
     htmlType: 'button',
     clsPrefix: 'u-button'
+
 };
 
 var sizeMap = {
@@ -99,8 +97,7 @@ var sizeMap = {
     floating: 'floating',
     pillRight: 'pill-right',
     pillLeft: 'pill-left'
-},
-    clsPrefix = 'u-button';
+};
 
 var Button = function (_Component) {
     _inherits(Button, _Component);

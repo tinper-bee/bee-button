@@ -1,16 +1,11 @@
 @charset "UTF-8";
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
 /* UButton */
 /* UText */
@@ -46,10 +41,9 @@ $color-accent: $palette-pink-A200 !default;
   padding: 0.3125rem 0.8125rem;
   padding: 5px 13px \9;
   display: inline-block;
-  font-family: "Microsoft YaHei", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0;
   overflow: hidden;
@@ -61,7 +55,7 @@ $color-accent: $palette-pink-A200 !default;
   text-align: center;
   line-height: 1.57143;
   vertical-align: middle;
-  font-family: "Microsoft YaHei", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
   .u-button::-moz-focus-inner {
     border: 0; }
   .u-button:hover {

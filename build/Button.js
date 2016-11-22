@@ -46,7 +46,7 @@ var propTypes = {
     /**
     * @title 类型
     */
-    type: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+    colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
     /**
      * @title 是否禁用
      * @veIgnore
@@ -75,7 +75,8 @@ var defaultProps = {
     disabled: false,
     className: '',
     children: '',
-    htmlType: 'button'
+    htmlType: 'button',
+    clsPrefix: 'u-button'
 };
 
 var sizeMap = {
@@ -112,15 +113,16 @@ var Button = function (_Component) {
 
     Button.prototype.render = function render() {
         var _props = this.props;
-        var type = _props.type;
+        var colors = _props.colors;
         var shape = _props.shape;
         var disabled = _props.disabled;
         var className = _props.className;
         var size = _props.size;
         var children = _props.children;
         var htmlType = _props.htmlType;
+        var clsPrefix = _props.clsPrefix;
 
-        var others = _objectWithoutProperties(_props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
+        var others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType', 'clsPrefix']);
 
         var clsObj = {};
         if (className) {
@@ -132,8 +134,8 @@ var Button = function (_Component) {
         if (shapeMap[shape]) {
             clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
         }
-        if (typeMap[type]) {
-            clsObj[clsPrefix + '-' + typeMap[type]] = true;
+        if (typeMap[colors]) {
+            clsObj[clsPrefix + '-' + typeMap[colors]] = true;
         }
         var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
         return _react2["default"].createElement(
@@ -154,18 +156,4 @@ Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
 exports["default"] = Button;
-module.exports = exports['default'];
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _Button = require('./Button');
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-exports["default"] = _Button2["default"];
 module.exports = exports['default'];

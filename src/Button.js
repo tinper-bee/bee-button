@@ -18,7 +18,7 @@ const propTypes = {
    /**
    * @title 类型
    */
-  type: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+  colors: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
   /**
    * @title 是否禁用
    * @veIgnore
@@ -50,7 +50,8 @@ const defaultProps = {
   disabled: false,
   className: '',
   children: '',
-  htmlType: 'button'
+  htmlType: 'button',
+  clsPrefix: 'u-button'
 }
 
 const sizeMap = {
@@ -82,7 +83,7 @@ class Button extends Component {
         super(props);
     }
     render() {
-        let {type, shape, disabled, className, size, children, htmlType, ...others} = this.props;
+        let {colors, shape, disabled, className, size, children, htmlType, clsPrefix,...others} = this.props;
         let clsObj = {};
         if (className) {
             clsObj[className] = true;
@@ -93,8 +94,8 @@ class Button extends Component {
         if (shapeMap[shape]) {
             clsObj[`${clsPrefix}-${shapeMap[shape]}`] = true;
         }
-        if (typeMap[type]) {
-            clsObj[`${clsPrefix}-${typeMap[type]}`] = true;
+        if (typeMap[colors]) {
+            clsObj[`${clsPrefix}-${typeMap[colors]}`] = true;
         }
         let classNames = classnames(clsPrefix, clsObj);
         return (

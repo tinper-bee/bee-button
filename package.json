@@ -30,11 +30,12 @@
   "chrome": "bee-tools run chrome",
   "coveralls": "bee-tools run coverage",
   "browsers": "bee-tools run browsers",
-  "pub": "bee-tools run pub"
+  "pub": "bee-tools run pub",
+  "coveralls": "bee-tools run coverage"
  },
  "dependencies": {
   "classnames": "^2.2.5",
-  "tinper-bee-core": "^0.0.4"
+  "tinper-bee-core": "latest"
  },
  "devDependencies": {
   "chai": "^3.5.0",

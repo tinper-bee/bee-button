@@ -25,27 +25,27 @@ describe('verifiy size', function () {
 
 describe('verifiy type', function () {
   it('Button should be primary', function () {
-    let button = shallow(<Button type="primary" />);
+    let button = shallow(<Button colors="primary" />);
     expect(button.hasClass('u-button-primary')).to.equal(true);
   });
   it('Button should be accent', function () {
-    let button = shallow(<Button type="accent" />);
+    let button = shallow(<Button colors="accent" />);
     expect(button.hasClass('u-button-accent')).to.equal(true);
   });
   it('Button should be success', function () {
-    let button = shallow(<Button type="success" />);
+    let button = shallow(<Button colors="success" />);
     expect(button.hasClass('u-button-success')).to.equal(true);
   });
   it('Button should be info', function () {
-    let button = shallow(<Button type="info" />);
+    let button = shallow(<Button colors="info" />);
     expect(button.hasClass('u-button-info')).to.equal(true);
   });
   it('Button should be warning', function () {
-    let button = shallow(<Button type="warning" />);
+    let button = shallow(<Button colors="warning" />);
     expect(button.hasClass('u-button-warning')).to.equal(true);
   });
   it('Button should be danger', function () {
-    let button = shallow(<Button type="danger" />);
+    let button = shallow(<Button colors="danger" />);
     expect(button.hasClass('u-button-danger')).to.equal(true);
   });
 });

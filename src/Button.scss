@@ -62,58 +62,6 @@ input.u-button[type="submit"] {
   -webkit-appearance:none;
 }
 
-// Raised buttons
-// 目前没有使用waves-effect先注释掉
-// .u-button.waves-effect{
-
-//   border:1px $button-border-color solid;
-//   font-size: 13px;
-//   background: $button-primary-color;
-//   background: $button-primary-color-IE8 \9;
-//   // @include shadow-2dp();
-
-//   &:active {
-//     @include shadow-4dp();
-//     background-color: $button-active-color;
-//   }
-
-//   &:focus:not(:active) {
-//     @include focus-shadow();
-//     background-color: $button-active-color;
-//   }
-
-//   &.colored {
-//     background: $button-primary-color-alt;
-//     color: $button-secondary-color-alt;
-
-//     &:hover {
-//       background-color: $button-hover-color-alt;
-//     }
-
-//     &:active {
-//       background-color: $button-active-color-alt;
-//     }
-
-//     &:focus:not(:active) {
-//       background-color: $button-active-color-alt;
-//     }
-
-//     background: $button-ripple-color-alt;
-//   }
-
-//   &.u-button-xg{
-//     font-size : $font-size-xg;
-//   }
-
-//   &.u-button-lg{
-//     font-size : $font-size-lg;
-//   }
-
-//   &.u-button-sm{
-//     font-size : $font-size-sm;
-//   }
-// }
-
 //Floating bottons
 .u-button-floating {
   border-radius: 50%;

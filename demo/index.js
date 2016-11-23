@@ -6,10 +6,10 @@ import ReactDOM from 'react-dom';
 function demo1() {
     return (
         <div>
-                <Button size="sm" colors="primary">小按钮</Button>
-                <Button colors="primary">默认</Button>
-                <Button size="lg" colors="primary">大按钮</Button>
-                <Button size="xg" colors="primary">巨大按钮</Button>
+                <Button size="sm" color="primary">小按钮</Button>
+                <Button color="primary">默认</Button>
+                <Button size="lg" color="primary">大按钮</Button>
+                <Button size="xg" color="primary">巨大按钮</Button>
         </div>
 
 
@@ -19,13 +19,14 @@ function demo1() {
 function demo2 () {
     return (
         <div>
-            <Button colors="primary">default 主色按钮</Button>
-            <Button colors="accent">辅色按钮</Button>
-  <Button disabled>不可点击</Button>
-            <Button colors="success">辅色按钮</Button>
-            <Button colors="info">辅色按钮</Button>
-            <Button colors="warning">辅色按钮</Button>
-            <Button colors="danger">辅色按钮</Button>
+            <Button>Default</Button>
+            <Button color="primary">主色按钮</Button>
+            <Button color="accent">辅色按钮</Button>
+            <Button disabled>不可点击</Button>
+            <Button color="success">辅色按钮</Button>
+            <Button color="info">辅色按钮</Button>
+            <Button color="warning">辅色按钮</Button>
+            <Button color="danger">辅色按钮</Button>
         </div>
     );
 }
@@ -33,12 +34,12 @@ function demo2 () {
 function demo3 () {
     return (
         <div>
-            <Button shape="block" colors="primary">块状按钮</Button>
-            <Button shape="round" colors="primary">圆形边按钮</Button>
-            <Button shape="squared" colors="primary">方形按钮</Button>
-            <Button shape="floating" colors="primary">圆形按钮</Button>
-            <Button shape="pillRight" colors="primary">右半圆按钮</Button>
-            <Button shape="pillLeft" colors="primary">左半圆按钮</Button>
+            <Button shape="block" color="primary">块状按钮</Button>
+            <Button shape="round" color="primary">圆形边按钮</Button>
+            <Button shape="squared" color="primary">方形按钮</Button>
+            <Button shape="floating" color="primary">圆形按钮</Button>
+            <Button shape="pillRight" color="primary">右半圆按钮</Button>
+            <Button shape="pillLeft" color="primary">左半圆按钮</Button>
         </div>
     );
 }

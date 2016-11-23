@@ -6,7 +6,7 @@ const propTypes = {
   /**
    * @title 尺寸
    */
-  size: PropTypes.oneOf(['sm', 'xg', 'lg', '']),
+  size: PropTypes.oneOf(['sm', 'xg', 'lg']),
   /**
    * @title 样式
    */
@@ -14,11 +14,11 @@ const propTypes = {
   /**
    * @title 形状
    */
-  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft']),
    /**
    * @title 类型
    */
-  colors: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+  color: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger']),
   /**
    * @title 是否禁用
    * @veIgnore
@@ -38,12 +38,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-  size: '',
-  colors: 'primary',
-  shape: '',
   disabled: false,
-  className: '',
-  children: '',
   htmlType: 'button',
   clsPrefix: 'u-button'
 
@@ -54,7 +49,7 @@ const sizeMap = {
         xg: 'xg',
         lg: 'lg'
     },
-    typeMap = {
+    colorMap = {
         primary: 'primary',
         accent: 'accent',
         success: 'success',
@@ -77,7 +72,7 @@ class Button extends Component {
         super(props);
     }
     render() {
-        let {colors,
+        let {color,
             shape,
             disabled,
             className,
@@ -96,14 +91,14 @@ class Button extends Component {
         if (shapeMap[shape]) {
             clsObj[`${clsPrefix}-${shapeMap[shape]}`] = true;
         }
-        if (typeMap[colors]) {
-            clsObj[`${clsPrefix}-${typeMap[colors]}`] = true;
+        if (colorMap[color]) {
+            clsObj[`${clsPrefix}-${colorMap[color]}`] = true;
         }
-        let classNames = classnames(clsPrefix, clsObj);
+        let classes = classnames(clsPrefix, clsObj);
         return (
             <button
                 type={htmlType}
-                className={classNames}
+                className={classes}
                 disabled={disabled}
                 {...others}>
               {this.props.children}

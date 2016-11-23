@@ -73,15 +73,13 @@ input.u-button[type="submit"] {
   width: $button-fab-size;
   width: 38px \9;
   padding: 0;
-  overflow: hidden;
   background: $button-primary-color;
   background: $button-primary-color-IE8 \9;
   // box-shadow: 0 1/16 * $unit 1.5/16 * $unit 0 rgba(0,0,0,0.12), 0 1/16 * $unit 1/16 * $unit 0 rgba(0,0,0,0.24);
   // box-shadow: 0 1/16 * $unit 1.5/16 * $unit 0 rgb(0,0,0), 0 1/16 * $unit 1/16 * $unit 0 rgb(0,0,0) \9;
-  position: relative;
   line-height: normal;
   border: 1px solid $button-border-color;
-  & .fa, & .uf {
+ & .uf {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,17 +93,7 @@ input.u-button[type="submit"] {
     padding: 0px;
   }
 
-  &.mini {
-    height: $button-fab-size-mini;
-    min-width: $button-fab-size-mini;
-    width: $button-fab-size-mini;
-  }
-  &.flat{
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
+ 
   & .u-button-container {
     border-radius: 50%;
     // Fixes clipping bug in Safari.
@@ -114,11 +102,11 @@ input.u-button[type="submit"] {
 
   &:active {
     // @include shadow-4dp();
-    background-color: $button-active-color;
+    //background-color: $button-active-color;
   }
 
   &:focus:not(:active) {
-    @include focus-shadow();
+    //@include focus-shadow();
     background-color: $button-active-color;
   }
 

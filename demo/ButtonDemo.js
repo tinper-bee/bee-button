@@ -24,9 +24,9 @@ class Demo extends Component {
 
 				<div>
 					<h2>{"颜色:"}</h2>
-					<Button colors="primary">default 主色按钮</Button>
+					<Button colors="primary">主色按钮</Button>
 					<Button colors="accent">辅色按钮</Button>
-          <Button disabled>不可点击</Button>
+                    <Button disabled>不可点击</Button>
 					<Button colors="success">辅色按钮</Button>
 					<Button colors="info">辅色按钮</Button>
 					<Button colors="warning">辅色按钮</Button>

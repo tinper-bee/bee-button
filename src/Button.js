@@ -18,7 +18,7 @@ const propTypes = {
    /**
    * @title 类型
    */
-  color: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger']),
+  colors: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger','default']),
   /**
    * @title 是否禁用
    * @veIgnore
@@ -49,7 +49,7 @@ const sizeMap = {
         xg: 'xg',
         lg: 'lg'
     },
-    colorMap = {
+    colorsMap = {
         primary: 'primary',
         accent: 'accent',
         success: 'success',
@@ -73,7 +73,7 @@ class Button extends Component {
         super(props);
     }
     render() {
-        let {color,
+        let {colors,
             shape,
             disabled,
             className,
@@ -92,8 +92,8 @@ class Button extends Component {
         if (shapeMap[shape]) {
             clsObj[`${clsPrefix}-${shapeMap[shape]}`] = true;
         }
-        if (colorMap[color]) {
-            clsObj[`${clsPrefix}-${colorMap[color]}`] = true;
+        if (colorsMap[colors]) {
+            clsObj[`${clsPrefix}-${colorsMap[colors]}`] = true;
         }
         let classes = classnames(clsPrefix, clsObj);
         return (

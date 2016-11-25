@@ -34,7 +34,7 @@ var propTypes = {
     /**
      * @title 尺寸
      */
-    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
+    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg']),
     /**
      * @title 样式
      */
@@ -42,11 +42,11 @@ var propTypes = {
     /**
      * @title 形状
      */
-    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'border']),
     /**
     * @title 类型
     */
-    colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+    colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
     /**
      * @title 是否禁用
      * @veIgnore
@@ -66,12 +66,7 @@ var propTypes = {
 };
 
 var defaultProps = {
-    size: '',
-    colors: 'primary',
-    shape: '',
     disabled: false,
-    className: '',
-    children: '',
     htmlType: 'button',
     clsPrefix: 'u-button'
 
@@ -82,7 +77,7 @@ var sizeMap = {
     xg: 'xg',
     lg: 'lg'
 },
-    typeMap = {
+    colorsMap = {
     primary: 'primary',
     accent: 'accent',
     success: 'success',
@@ -93,6 +88,7 @@ var sizeMap = {
     shapeMap = {
     block: 'block',
     round: 'round',
+    border: 'border',
     squared: 'squared',
     floating: 'floating',
     pillRight: 'pill-right',
@@ -131,15 +127,15 @@ var Button = function (_Component) {
         if (shapeMap[shape]) {
             clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
         }
-        if (typeMap[colors]) {
-            clsObj[clsPrefix + '-' + typeMap[colors]] = true;
+        if (colorsMap[colors]) {
+            clsObj[clsPrefix + '-' + colorsMap[colors]] = true;
         }
-        var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
+        var classes = (0, _classnames2["default"])(clsPrefix, clsObj);
         return _react2["default"].createElement(
             'button',
             _extends({
                 type: htmlType,
-                className: classNames,
+                className: classes,
                 disabled: disabled
             }, others),
             this.props.children

@@ -6,10 +6,10 @@ import ReactDOM from 'react-dom';
 function demo1() {
     return (
         <div>
-                <Button size="sm" color="primary">小按钮</Button>
-                <Button color="primary">默认</Button>
-                <Button size="lg" color="primary">大按钮</Button>
-                <Button size="xg" color="primary">巨大按钮</Button>
+                <Button size="sm" colors="primary">小按钮</Button>
+                <Button colors="primary">默认</Button>
+                <Button size="lg" colors="primary">大按钮</Button>
+                <Button size="xg" colors="primary">巨大按钮</Button>
         </div>
 
 
@@ -20,13 +20,13 @@ function demo2 () {
     return (
         <div>
             <Button>Default</Button>
-            <Button color="primary">主色按钮</Button>
-            <Button color="accent">辅色按钮</Button>
+            <Button colors="primary">主色按钮</Button>
+            <Button colors="accent">辅色按钮</Button>
             <Button disabled>不可点击</Button>
-            <Button color="success">success</Button>
-            <Button color="info">info</Button>
-            <Button color="warning">warning</Button>
-            <Button color="danger">danger</Button>
+            <Button colors="success">success</Button>
+            <Button colors="info">info</Button>
+            <Button colors="warning">warning</Button>
+            <Button colors="danger">danger</Button>
         </div>
     );
 }
@@ -34,18 +34,18 @@ function demo2 () {
 function demo3 () {
     return (
         <div>
-            <Button shape="block" color="primary">块状按钮</Button>
-            <Button shape="round" color="primary">圆形边按钮</Button>
-            <Button shape="squared" color="primary">方形按钮</Button>
-            <Button shape="border" color="primary">边框按钮</Button>
-            <Button shape="border" color="accent">边框按钮</Button>
-            <Button shape="border" color="success">边框按钮</Button>
-            <Button shape="border" color="warning">边框按钮</Button>
-            <Button shape="border" color="info">边框按钮</Button>
-            <Button shape="border" color="danger">边框按钮</Button>
-            <Button shape="floating" color="primary">圆形按钮</Button>
-            <Button shape="pillRight" color="primary">右半圆按钮</Button>
-            <Button shape="pillLeft" color="primary">左半圆按钮</Button>
+            <Button shape="block" colors="primary">块状按钮</Button>
+            <Button shape="round" colors="primary">圆形边按钮</Button>
+            <Button shape="squared" colors="primary">方形按钮</Button>
+            <Button shape="border" colors="primary">边框按钮</Button>
+            <Button shape="border" colors="accent">边框按钮</Button>
+            <Button shape="border" colors="success">边框按钮</Button>
+            <Button shape="border" colors="warning">边框按钮</Button>
+            <Button shape="border" colors="info">边框按钮</Button>
+            <Button shape="border" colors="danger">边框按钮</Button>
+            <Button shape="floating" colors="primary">圆形按钮</Button>
+            <Button shape="pillRight" colors="primary">右半圆按钮</Button>
+            <Button shape="pillLeft" colors="primary">左半圆按钮</Button>
         </div>
     );
 }

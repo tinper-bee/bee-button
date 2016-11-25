@@ -27,15 +27,16 @@ class Demo extends Component {
 					<Button colors="primary">主色按钮</Button>
 					<Button colors="accent">辅色按钮</Button>
                     <Button disabled>不可点击</Button>
-					<Button colors="success">辅色按钮</Button>
-					<Button colors="info">辅色按钮</Button>
-					<Button colors="warning">辅色按钮</Button>
-					<Button colors="danger">辅色按钮</Button>
+					<Button colors="success">success</Button>
+					<Button colors="info">info</Button>
+					<Button colors="warning">warning</Button>
+					<Button colors="danger">danger</Button>
 				</div>
 				<div>
 					<h2>{"形状:"}</h2>
 					<Button shape="block" colors="primary">块状按钮</Button>
 					<Button shape="round" colors="primary">圆形边按钮</Button>
+					<Button shape="border" colors="primary">边框按钮</Button>
 					<Button shape="squared" colors="primary">方形按钮</Button>
 					<Button shape="floating" colors="primary">圆形按钮</Button>
 					<Button shape="pillRight" colors="primary">右半圆按钮</Button>

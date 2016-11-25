@@ -14,7 +14,7 @@ const propTypes = {
   /**
    * @title 形状
    */
-  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft']),
+  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'border']),
    /**
    * @title 类型
    */
@@ -60,6 +60,7 @@ const sizeMap = {
     shapeMap = {
         block: 'block',
         round: 'round',
+        border: 'border',
         squared: 'squared',
         floating: 'floating',
         pillRight: 'pill-right',

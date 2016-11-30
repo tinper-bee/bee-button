@@ -1,48 +1,48 @@
 {
- "name": "bee-button",
- "version": "0.1.0",
- "description": "tinper-bee button ui component for react",
- "keywords": [
-  "react",
-  "react-component",
-  "bee-button",
-  "tinper",
-  "bee",
-  "button"
- ],
- "engines": {
-  "node": ">=4.0.0"
- },
- "homepage": "https://github.com/tinper-bee/button",
- "author": "",
- "repository": "http://github.com/tinper-bee/button",
- "bugs": "https://github.com/tinper-bee/button/issues",
- "license": "MIT",
- "main": "./build/index",
- "config": {
-  "port": 6666
- },
- "scripts": {
-  "dev": "bee-tools run start",
-  "build": "bee-tools run build",
-  "lint": "bee-tools run lint",
-  "test": "bee-tools run test",
-  "chrome": "bee-tools run chrome",
-  "coveralls": "bee-tools run coverage",
-  "browsers": "bee-tools run browsers",
-  "pub": "bee-tools run pub"
- },
- "dependencies": {
-  "classnames": "^2.2.5",
-  "tinper-bee-core": "latest"
- },
- "devDependencies": {
-  "chai": "^3.5.0",
-  "enzyme": "^2.4.1",
-  "react": "~0.14.0",
-  "console-polyfill": "~0.2.1",
-  "es5-shim": "~4.1.10",
-  "react-addons-test-utils": "15.3.2",
-  "react-dom": "~0.14.0"
- }
+  "name": "bee-button",
+  "version": "0.1.1",
+  "description": "tinper-bee button ui component for react",
+  "keywords": [
+    "react",
+    "react-component",
+    "bee-button",
+    "tinper",
+    "bee",
+    "button"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/tinper-bee/button",
+  "author": "",
+  "repository": "http://github.com/tinper-bee/button",
+  "bugs": "https://github.com/tinper-bee/button/issues",
+  "license": "MIT",
+  "main": "./build/index",
+  "config": {
+    "port": 6666
+  },
+  "scripts": {
+    "dev": "bee-tools run start",
+    "build": "bee-tools run build",
+    "lint": "bee-tools run lint",
+    "test": "bee-tools run test",
+    "chrome": "bee-tools run chrome",
+    "coveralls": "bee-tools run coverage",
+    "browsers": "bee-tools run browsers",
+    "pub": "bee-tools run pub"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "tinper-bee-core": "0.0.10"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1",
+    "react": "~0.14.0",
+    "console-polyfill": "~0.2.1",
+    "es5-shim": "~4.1.10",
+    "react-addons-test-utils": "15.3.2",
+    "react-dom": "~0.14.0"
+  }
 }

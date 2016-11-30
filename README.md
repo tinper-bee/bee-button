@@ -27,13 +27,13 @@ ReactDOM.render(
 #### 样式引入
 - 可以使用link引入build目录下button.css
 ```
-<link rel="stylesheet" href="./node_modules/build/bee-button.css">
+<link rel="stylesheet" href="./node_modules/bee-button/build/Button.css">
 ```
 - 可以在js中import样式
 ```js
-import "./node_modules/src/Button.scss"
+import "./node_modules/bee-button/src/Button.scss"
 //或是
-import "./node_modules/build/bee-button.css"
+import "./node_modules/bee-button/build/Button.css"
 ```
 
 ### 使用tinper-bee组件库
@@ -57,9 +57,9 @@ import "./node_modules/build/bee-button.css"
 #### setup develop environment
 
 ```sh
+$ npm install -g bee-tools
 $ git clone https://github.com/tinper-bee/bee-button
 $ cd bee-button
-$ npm install -g bee-tools
 $ npm install
 $ npm run dev
 ```

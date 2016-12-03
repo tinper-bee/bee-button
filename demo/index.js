@@ -1,56 +1,69 @@
-import Button from '../src';
+import DemoArray from './ButtonDemo';
+import { Con, Row, Col } from 'bee-layout';
+import { Panel } from 'bee-panel';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Button from '../src';
 
+const CARET = <i className="uf uf-chevronarrowdown"></i>;
 
-function demo1() {
-    return (
-        <div>
-                <Button size="sm" colors="primary">小按钮</Button>
-                <Button colors="primary">默认</Button>
-                <Button size="lg" colors="primary">大按钮</Button>
-                <Button size="xg" colors="primary">巨大按钮</Button>
-        </div>
+const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 
+class Demo extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            open: false
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        this.setState({ open: !this.state.open })
+    }
 
-    );
+    render () {
+        const { title, example, code  } = this.props;
+        let caret = this.state.open ? CARETUP : CARET;
+        let text = this.state.open ? "隐藏代码" : "查看代码";
+
+        const footer = (
+            <Button shape="block" onClick={ this.handleClick }>
+              { caret }
+              { text }
+            </Button>
+        )
+        return (
+            <Col md={8} mdOffset={2}>
+                <h3>{ title }</h3>
+                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
+                    { code }
+                </Panel>
+            </Col>
+        )
+    }
 }
 
-function demo2 () {
-    return (
-        <div>
-            <Button>Default</Button>
-            <Button colors="primary">主色按钮</Button>
-            <Button colors="accent">辅色按钮</Button>
-            <Button disabled>不可点击</Button>
-            <Button colors="success">success</Button>
-            <Button colors="info">info</Button>
-            <Button colors="warning">warning</Button>
-            <Button colors="danger">danger</Button>
-        </div>
-    );
-}
+class DemoGroup extends Component {
+    constructor(props){
+        super(props)
+    }
+    render () {
+        return (
+            <Con>
+                <Row>
+                {DemoArray.map((child,index) => {
 
-function demo3 () {
-    return (
-        <div>
-            <Button shape="block" colors="primary">块状按钮</Button>
-            <Button shape="round" colors="primary">圆形边按钮</Button>
-            <Button shape="squared" colors="primary">方形按钮</Button>
-            <Button shape="border" colors="primary">边框按钮</Button>
-            <Button shape="border" colors="accent">边框按钮</Button>
-            <Button shape="border" colors="success">边框按钮</Button>
-            <Button shape="border" colors="warning">边框按钮</Button>
-            <Button shape="border" colors="info">边框按钮</Button>
-            <Button shape="border" colors="danger">边框按钮</Button>
-            <Button shape="floating" colors="primary">圆形按钮</Button>
-            <Button shape="pillRight" colors="primary">右半圆按钮</Button>
-            <Button shape="pillLeft" colors="primary">左半圆按钮</Button>
-        </div>
-    );
+                    return (
+                        <Demo example= {child.example} title= {child.title} code= {child.code} key= {index}/>
+                    )
+
+                })}
+                </Row>
+            </Con>
+        )
+    }
 }
 
 
-ReactDOM.render(demo1(), document.getElementById('neouiReactDemo1'));
-ReactDOM.render(demo2(), document.getElementById('neouiReactDemo2'));
-ReactDOM.render(demo3(), document.getElementById('neouiReactDemo3'));
+
+ReactDOM.render(<DemoGroup/>, document.getElementById('beeButtonDemo'));

@@ -1,54 +1,125 @@
 import Button from '../src';
 import React, { Component } from 'react';
 
-
-class Demo extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<div>
-				<div>
-					<h2>{"默认:"}</h2>
-					<Button htmltype="submit" className="xxxx" style={{color: '#f00'}}>default</Button>
-				</div>
-				<div>
-					<h2>{"大小:"}</h2>
-					<Button size="sm" colors="primary">小按钮</Button>
-					<Button colors="primary">默认</Button>
-					<Button size="lg" colors="primary">大按钮</Button>
-					<Button size="xg" colors="primary">巨大按钮</Button>
-				</div>
-
-				<div>
-					<h2>{"颜色:"}</h2>
-					<Button colors="primary">主色按钮</Button>
-					<Button colors="accent">辅色按钮</Button>
-                    <Button disabled>不可点击</Button>
-					<Button colors="success">success</Button>
-					<Button colors="info">info</Button>
-					<Button colors="warning">warning</Button>
-					<Button colors="danger">danger</Button>
-				</div>
-				<div>
-					<h2>{"形状:"}</h2>
-					<Button shape="block" colors="primary">块状按钮</Button>
-					<Button shape="round" colors="primary">圆形边按钮</Button>
-					<Button shape="border" colors="primary">边框按钮</Button>
-					<Button shape="squared" colors="primary">方形按钮</Button>
-					<Button shape="floating" colors="primary">圆形按钮</Button>
-					<Button shape="pillRight" colors="primary">右半圆按钮</Button>
-					<Button shape="pillLeft" colors="primary">左半圆按钮</Button>
-				</div>
-				<div>
-					<h2>{"事件:"}</h2>
-					<Button onClick={function(){alert('谢谢你点我！')}}>点我</Button>
-				</div>
-			</div>
-		);
-	}
+function demo1() {
+	return (
+		<div className="demoPadding">
+			<Button>Default</Button>
+			<Button disabled>disabled</Button>
+		</div>
+	)
 }
 
-export default Demo;
+const demoCode1 = '<div>\
+	<Button>Default</Button>\
+	<Button disabled>disabled</Button>\
+</div>';
+
+function demo2() {
+    return (
+        <div className="demoPadding">
+                <Button size="sm" colors="primary">小按钮</Button>
+                <Button colors="primary">默认</Button>
+                <Button size="lg" colors="primary">大按钮</Button>
+                <Button size="xg" colors="primary">巨大按钮</Button>
+        </div>
+
+
+    );
+}
+const demoCode2 = '<div>\n\
+		<Button size="sm" colors="primary">小按钮</Button>\n\
+		<Button colors="primary">默认</Button>\n\
+		<Button size="lg" colors="primary">大按钮</Button>\n\
+		<Button size="xg" colors="primary">巨大按钮</Button>\n\
+</div>';
+
+function demo3 () {
+    return (
+        <div className="demoPadding">
+            <Button colors="primary">主色按钮</Button>
+            <Button colors="accent">辅色按钮</Button>
+            <Button colors="success">success</Button>
+            <Button colors="info">info</Button>
+            <Button colors="warning">warning</Button>
+            <Button colors="danger">danger</Button>
+        </div>
+    );
+}
+
+const demoCode3 = '<div>\
+	<Button colors="primary">主色按钮</Button>\
+	<Button colors="accent">辅色按钮</Button>\
+	<Button colors="success">success</Button>\
+	<Button colors="info">info</Button>\
+	<Button colors="warning">warning</Button>\
+	<Button colors="danger">danger</Button>\
+</div>';
+
+function demo4() {
+	return (
+		<div className="demoPadding">
+			<Button shape="border" colors="primary">主色按钮</Button>
+			<Button shape="border" colors="accent">辅色按钮</Button>
+			<Button shape="border" colors="success">success</Button>
+			<Button shape="border" colors="warning">info</Button>
+			<Button shape="border" colors="info">warning</Button>
+			<Button shape="border" colors="danger">danger</Button>
+		</div>
+	)
+}
+
+const demoCode4 = '<div>\
+	<Button shape="border" colors="primary">边框按钮</Button>\
+	<Button shape="border" colors="accent">边框按钮</Button>\
+	<Button shape="border" colors="success">边框按钮</Button>\
+	<Button shape="border" colors="warning">边框按钮</Button>\
+	<Button shape="border" colors="info">边框按钮</Button>\
+	<Button shape="border" colors="danger">边框按钮</Button>\
+</div>';
+
+function demo5 () {
+    return (
+        <div className="demoPadding">
+            <Button shape="block" colors="primary">块状按钮</Button>
+            <Button shape="round" colors="primary">圆形边按钮</Button>
+            <Button shape="squared" colors="primary">方形按钮</Button>
+            <Button shape="floating" colors="primary">圆形按钮</Button>
+            <Button shape="pillRight" colors="primary">右半圆按钮</Button>
+            <Button shape="pillLeft" colors="primary">左半圆按钮</Button>
+        </div>
+    );
+}
+
+const demoCode5 = '<div>\
+	<Button shape="block" colors="primary">块状按钮</Button>\
+	<Button shape="round" colors="primary">圆形边按钮</Button>\
+	<Button shape="squared" colors="primary">方形按钮</Button>\
+	<Button shape="floating" colors="primary">圆形按钮</Button>\
+	<Button shape="pillRight" colors="primary">右半圆按钮</Button>\
+	<Button shape="pillLeft" colors="primary">左半圆按钮</Button>\
+</div>';
+
+var array = [{
+	example: demo1(),
+	title: "默认的按钮",
+	code: demoCode1
+}, {
+	example: demo2(),
+	title: "不同大小的按钮",
+	code: demoCode2
+}, {
+	example: demo3(),
+	title: "不同颜色的按钮",
+	code: demoCode3
+}, {
+	example: demo4(),
+	title: "只有边框的按钮",
+	code: demoCode4
+}, {
+	example: demo5(),
+	title: "不同形状的按钮",
+	code: demoCode5
+}];
+
+export default array;

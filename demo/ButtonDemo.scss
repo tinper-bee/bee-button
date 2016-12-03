@@ -1,2 +1,14 @@
 @import "../node_modules/tinper-bee-core/scss/index.scss";
 @import "../src/Button.scss";
+@import "../node_modules/bee-layout/build/Layout.css";
+@import "../node_modules/bee-panel/build/Panel.css";
+@import "../node_modules/bee-transition/build/Transition.css";
+
+body{
+    background:  #eceff1;
+}
+.demoPadding{
+    button{
+        margin: auto 5px;
+    }
+}

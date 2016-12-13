@@ -145,13 +145,13 @@ input.u-button[type="submit"] {
 }
 
 .u-button-border{
-    color: $button-primary-color;
-    border: 1px solid $button-primary-color;
+    color: $button-secondary-color;
+    border: 1px solid $button-secondary-color;
     background-color: #fff;
 }
 .u-button-border:hover{
-    color: $button-primary-color;
-    background: $button-hover-color;
+    color: $button-secondary-color;
+    background: #e6e6e6;
 }
 
 

@@ -154,6 +154,19 @@ input.u-button[type="submit"] {
     background: #e6e6e6;
 }
 
+.u-button-icon {
+    border-radius: 50%;
+    font-size: $button-fab-font-size;
+    height: $button-fab-size;
+    height: 38px \9;
+    margin: auto;
+    min-width: $button-fab-size;
+    width: $button-fab-size;
+    width: 38px \9;
+    padding: 0;
+    line-height: normal;
+    border: 1px solid $button-border-color;
+}
 
 //大型
 .u-button-lg {

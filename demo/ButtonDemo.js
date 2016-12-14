@@ -6,11 +6,12 @@ function demo1() {
 		<div className="demoPadding">
 			<Button>Default</Button>
 			<Button disabled>disabled</Button>
+			<Button shape="border">Default</Button>
 		</div>
 	)
 }
 
-const demoCode1 ='<Button>Default</Button>\n<Button disabled>disabled</Button>';
+const demoCode1 ='<Button>Default</Button>\n<Button disabled>disabled</Button>\n			<Button shape="border">Default</Button>';
 
 function demo2() {
     return (
@@ -42,7 +43,6 @@ const demoCode3 ='<Button colors="primary">主色按钮</Button>\n<Button colors
 function demo4() {
 	return (
 		<div className="demoPadding">
-			<Button shape="border">Default</Button>
 			<Button shape="border" colors="primary">主色按钮</Button>
 			<Button shape="border" colors="accent">辅色按钮</Button>
 			<Button shape="border" colors="success">success</Button>

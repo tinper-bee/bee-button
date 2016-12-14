@@ -35,11 +35,21 @@ class Demo extends Component {
                 { caret }
                 { text }
             </Button>
-        )
+        );
+        const header = (
+            <Row>
+                <Col md={11}>
+                {example}
+                </Col>
+                <Col md={1}>
+                <Button shape="icon" onClick={ this.handleClick }>{caret}</Button>
+                </Col>
+            </Row>
+        );
         return (
-            <Col md={12}>
-                <h3>{ title }</h3>
-                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
+            <Col md={10} mdOffset={1} xs={12} xsOffset={0}>
+                <h4>{ title }</h4>
+                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>
             </Col>
@@ -53,7 +63,6 @@ class DemoGroup extends Component {
     }
     render () {
         return (
-            <Con>
                 <Row>
                     {DemoArray.map((child,index) => {
 
@@ -63,7 +72,6 @@ class DemoGroup extends Component {
 
                     })}
                 </Row>
-            </Con>
         )
     }
 }

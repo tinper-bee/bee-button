@@ -25,7 +25,7 @@ ReactDOM.render(
         , document.getElementById('target'));
 ```
 #### 样式引入
-- 可以使用link引入build目录下button.css
+- 可以使用link引入build目录下Button.css
 ```
 <link rel="stylesheet" href="./node_modules/bee-button/build/Button.css">
 ```

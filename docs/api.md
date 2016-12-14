@@ -1,10 +1,17 @@
+## Button
+按钮组件
+
+通过点击执行一个具体的行为或动作。
+
+## 代码展示
+
 ### API
 
 |参数|说明|类型|默认值|
 |:---|:----:|:---:|------:|
 |size|按钮大小(`large` `medium` `small`)|string|medium|
-|colors|颜色(`primary` `success`)|string|''|
-|shape|形状(`round` `squared`)|string|''|
+|colors|颜色(primary/accent/success/info/warning/danger/default)|string|''|
+|shape|形状(block/round/squared/floating/pillRight/pillLeft/border/icon)|string|''|
 |disabled|是否禁用(`disabled` 或 `true` `false`)|string|false|
 |className|增加额外的class|string|''|
 |htmlType|html dom 的 type 属性(`submit` `button` `reset`)|string|button|

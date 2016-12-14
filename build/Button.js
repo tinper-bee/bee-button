@@ -42,7 +42,7 @@ var propTypes = {
     /**
      * @title 形状
      */
-    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'border']),
+    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'border', 'icon']),
     /**
     * @title 类型
     */
@@ -92,7 +92,8 @@ var sizeMap = {
     squared: 'squared',
     floating: 'floating',
     pillRight: 'pill-right',
-    pillLeft: 'pill-left'
+    pillLeft: 'pill-left',
+    icon: 'icon'
 };
 
 var Button = function (_Component) {

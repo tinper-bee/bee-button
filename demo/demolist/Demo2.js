@@ -1,23 +1,22 @@
 /**
  *
- * @title 不同大小的按钮
+ * @title 不同形状的按钮
+ * @description 通过`shape`属性控制按钮大小
  *
  */
 
 class Demo2 extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            open: false
-        }
-    }
     render () {
         return (
             <div className="demoPadding">
-                <Button size="sm" colors="primary">小按钮</Button>
-                <Button colors="primary">默认</Button>
-                <Button size="lg" colors="primary">大按钮</Button>
-                <Button size="xg" colors="primary">巨大按钮</Button>
+            <Col md={6} xs={12}>
+                <Button shape="block" colors="primary">块状按钮</Button>
+            </Col>
+            <Col md={6} xs={12}>
+            <Button shape="round" colors="primary">圆形边按钮</Button>
+            <Button shape="squared" colors="warning">方形按钮</Button>
+            <Button shape="floating" colors="primary">圆形按钮</Button>
+            </Col>
             </div>
         )
     }

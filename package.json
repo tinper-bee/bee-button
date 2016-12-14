@@ -1,6 +1,6 @@
 {
   "name": "bee-button",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "tinper-bee button ui component for react",
   "keywords": [
     "react",
@@ -34,11 +34,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "tinper-bee-core": "0.0.10"
+    "tinper-bee-core": "latest"
   },
   "devDependencies": {
-    "bee-layout": "0.0.2",
-    "bee-panel": "^0.0.1",
+    "bee-layout": "latest",
+    "bee-panel": "latest",
     "chai": "^3.5.0",
     "console-polyfill": "~0.2.1",
     "enzyme": "^2.4.1",

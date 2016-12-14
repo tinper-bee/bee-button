@@ -26,7 +26,7 @@ class Demo extends Component {
     }
 
     render () {
-        const { title, example, code  } = this.props;
+        const { title, example, code, desc  } = this.props;
         let caret = this.state.open ? CARETUP : CARET;
         let text = this.state.open ? "隐藏代码" : "查看代码";
 
@@ -36,19 +36,23 @@ class Demo extends Component {
                 { text }
             </Button>
         );
+
         const header = (
             <Row>
                 <Col md={11}>
-                {example}
+                { example }
                 </Col>
                 <Col md={1}>
-                <Button shape="icon" onClick={ this.handleClick }>{caret}</Button>
+                <Button shape="icon" onClick={ this.handleClick }>
+                    { caret }
+                </Button>
                 </Col>
             </Row>
         );
         return (
-            <Col md={10} mdOffset={1} xs={12} xsOffset={0}>
-                <h4>{ title }</h4>
+            <Col md={10} mdOffset={1} sm={12} smOffset={0}>
+                <h3>{ title }</h3>
+                <p>{ desc }</p>
                 <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>
@@ -67,7 +71,7 @@ class DemoGroup extends Component {
                     {DemoArray.map((child,index) => {
 
                         return (
-                            <Demo example= {child.example} title= {child.title} code= {child.code} key= {index}/>
+                            <Demo example= {child.example} title= {child.title} code= {child.code} desc= {child.desc} key= {index}/>
                         )
 
                     })}

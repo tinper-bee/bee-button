@@ -1,22 +1,24 @@
 /**
  *
  * @title 不同颜色的按钮
+ * @description 通过`colors`属性控制按钮颜色
  *
  */
 
 class Demo3 extends Component {
-    constructor(props){
-        super(props);
-    }
+
     render () {
         return (
             <div className="demoPadding">
-                <Button colors="primary">主色按钮</Button>
-                <Button colors="accent">辅色按钮</Button>
-                <Button colors="success">success</Button>
-                <Button colors="info">info</Button>
-                <Button colors="warning">warning</Button>
-                <Button colors="danger">danger</Button>
+                    <Button colors="success">success</Button>
+                    <Button colors="info">info</Button>
+                    <Button colors="warning">warning</Button>
+                    <Button colors="danger">danger</Button>
+                <div className="divider"></div>
+                    <Button shape="border" colors="success">success</Button>
+                    <Button shape="border" colors="warning">info</Button>
+                    <Button shape="border" colors="info">warning</Button>
+                    <Button shape="border" colors="danger">danger</Button>
             </div>
         )
     }

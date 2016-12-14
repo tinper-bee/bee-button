@@ -146,23 +146,21 @@ input.u-button[type="submit"] {
 
 .u-button-border{
     color: $button-secondary-color;
-    border: 1px solid $button-secondary-color;
+    border: 1px solid #d9d9d9;
     background-color: #fff;
 }
 .u-button-border:hover{
     color: $button-secondary-color;
-    background: #e6e6e6;
+    background: $button-hover-color;
 }
 
 .u-button-icon {
     border-radius: 50%;
     font-size: $button-fab-font-size;
-    height: $button-fab-size;
-    height: 38px \9;
+    height:$button-icon-size;
     margin: auto;
-    min-width: $button-fab-size;
-    width: $button-fab-size;
-    width: 38px \9;
+    min-width:$button-icon-size;
+    width: $button-icon-size;
     padding: 0;
     line-height: normal;
     border: 1px solid $button-border-color;

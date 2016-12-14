@@ -213,12 +213,23 @@ input.u-button[type="submit"] {
 
 .u-button-border {
   color: rgb(51,51,51);
-  border: 1px solid rgb(51,51,51);
+  border: 1px solid #d9d9d9;
   background-color: #fff; }
 
 .u-button-border:hover {
   color: rgb(51,51,51);
-  background: #e6e6e6; }
+  background: #F7F7F7; }
+
+.u-button-icon {
+  border-radius: 50%;
+  font-size: 0.875rem;
+  height: 2rem;
+  margin: auto;
+  min-width: 2rem;
+  width: 2rem;
+  padding: 0;
+  line-height: normal;
+  border: 1px solid rgb(224,224,224); }
 
 .u-button-lg {
   padding: 6px 15px;

@@ -43,7 +43,7 @@ import "./node_modules/bee-button/build/Button.css"
 
 |参数|说明|类型|默认值|
 |:---|:----:|:---:|------:|
-|size|按钮大小(`large` `medium` `small`)|string|medium|
+|size|按钮大小(`lg` `xg` `sm`)|string|-|
 |colors|颜色(primary/accent/success/info/warning/danger/default)|string|''|
 |shape|形状(block/round/squared/floating/pillRight/pillLeft/border/icon)|string|''|
 |disabled|是否禁用(`disabled` 或 `true` `false`)|string|false|

@@ -106,17 +106,16 @@ var Button = function (_Component) {
     }
 
     Button.prototype.render = function render() {
-        var _props = this.props;
-        var colors = _props.colors;
-        var shape = _props.shape;
-        var disabled = _props.disabled;
-        var className = _props.className;
-        var size = _props.size;
-        var children = _props.children;
-        var htmlType = _props.htmlType;
-        var clsPrefix = _props.clsPrefix;
-
-        var others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType', 'clsPrefix']);
+        var _props = this.props,
+            colors = _props.colors,
+            shape = _props.shape,
+            disabled = _props.disabled,
+            className = _props.className,
+            size = _props.size,
+            children = _props.children,
+            htmlType = _props.htmlType,
+            clsPrefix = _props.clsPrefix,
+            others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType', 'clsPrefix']);
 
         var clsObj = {};
         if (className) {

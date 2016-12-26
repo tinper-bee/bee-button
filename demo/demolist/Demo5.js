@@ -6,16 +6,17 @@
  */
 
 class Demo5 extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
-    handleClick(){
+
+    handleClick() {
         alert("谢谢你点我")
     }
 
-    render () {
+    render() {
         return (
-                <Button colors="primary" onClick={ this.handleClick }>事件按钮</Button>
+            <Button colors="primary" onClick={ this.handleClick }>事件按钮</Button>
         )
     }
 }

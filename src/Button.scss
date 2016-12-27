@@ -3,10 +3,10 @@
 
 //默认 flat 样式.
 .u-button {
-  background: transparent;
+  background: $button-default-color;
   border: none;
   border-radius: $button-border-radius;
-  color: $button-secondary-color;
+  color: $button-default-text-color;
   position: relative;
   min-width: $button-min-width;
   padding: $button-padding;
@@ -24,7 +24,6 @@
   text-align: center;
   line-height: $button-line-height;
   vertical-align: middle;
-  font-family:$preferred_font;
   &::-moz-focus-inner {
     border: 0;
   }
@@ -38,10 +37,10 @@
   }
 
   &.colored {
-    color: $button-primary-color-alt;
+    color: $button-primary-color;
 
     &:focus:not(:active) {
-      background-color: $button-focus-color-alt;
+      background-color: $button-focus-color;
     }
   }
   &.disable{
@@ -106,23 +105,21 @@ input.u-button[type="submit"] {
         border-color: #adadad;
     }
 }
-.u-button-accent{
-    @include button-styles-variant($button-fab-text-color-alt,$button-fab-color-alt,$button-fab-hover-color-alt,$button-fab-active-color-alt);
-}
+
 .u-button-primary{
-    @include button-styles-variant($button-secondary-color-alt,$button-primary-color-alt,$button-primary-hover-color-alt,$button-primary-active-color);
+    @include button-styles-variant($button-text-color,$button-primary-color,$button-primary-hover-color,$button-primary-active-color);
 }
 .u-button-danger{
-    @include button-styles-variant($button-secondary-color-alt,$button-danger-color,$button-danger-hover-color,$button-danger-active-color);
+    @include button-styles-variant($button-text-color,$button-danger-color,$button-danger-hover-color,$button-danger-active-color);
 }
 .u-button-info{
-    @include button-styles-variant($button-secondary-color-alt,$button-info-color,$button-info-hover-color,$button-info-active-color);
+    @include button-styles-variant($button-text-color,$button-info-color,$button-info-hover-color,$button-info-active-color);
 }
 .u-button-warning{
-    @include button-styles-variant($button-secondary-color-alt,$button-warning-color,$button-warning-hover-color,$button-warning-active-color);
+    @include button-styles-variant($button-text-color,$button-warning-color,$button-warning-hover-color,$button-warning-active-color);
 }
 .u-button-success{
-    @include button-styles-variant($button-secondary-color-alt,$button-success-color,$button-success-hover-color,$button-success-active-color);
+    @include button-styles-variant($button-text-color,$button-success-color,$button-success-hover-color,$button-success-active-color);
 }
 .u-button-border.u-button-accent{
     @include border-button-styles-variant($button-fab-color-alt,$button-fab-color-alt,$button-fab-color-alt,$button-fab-active-color-alt);
@@ -145,13 +142,17 @@ input.u-button[type="submit"] {
 }
 
 .u-button-border{
-    color: $button-secondary-color;
+    color: $button-default-text-color;
     border: 1px solid #d9d9d9;
     background-color: #fff;
 }
-.u-button-border:hover{
-    color: $button-secondary-color;
+.u-button-border:hover,.u-button-border:focus{
+    color: $button-default-text-color;
     background: $button-hover-color;
+}
+.u-button-border:active{
+    color: #fff;
+    background: $button-active-color;
 }
 
 .u-button-icon {
@@ -168,17 +169,17 @@ input.u-button[type="submit"] {
 
 //大型
 .u-button-lg {
-    @include button-size($button-padding-y-lg, $button-padding-x-lg, $font-size-lg, $button-border-radius-lg);
+    @include button-size($button-padding-y-lg, $button-padding-x-lg, $font-size-lg);
 }
 //特大型
 .u-button-xg {
 
-  @include button-size($button-padding-y-xg, $button-padding-x-xg, $font-size-xg, $button-border-radius-xg);
+  @include button-size($button-padding-y-xg, $button-padding-x-xg, $font-size-xg);
 }
 
 //小型
 .u-button-sm {
-   @include button-size($button-padding-y-sm, $button-padding-x-sm, $font-size-sm, $button-border-radius-sm);
+   @include button-size($button-padding-y-sm, $button-padding-x-sm, $font-size-sm);
 }
 //方形按钮
 .u-button-squared {

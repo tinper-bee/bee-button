@@ -168,7 +168,7 @@ class Demo extends Component {
                 <p>{ desc }</p>
                 <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
                     <ReactZeroClipboard text={code} {...zclipProps}>
-                        <span className="input-group-addon" style={{cursor: 'pointer'}}>Copy</span>
+                        <Button colors="primary" className="input-group-addon" style={{cursor: 'pointer'}}>Copy</Button>
                     </ReactZeroClipboard>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>

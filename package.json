@@ -45,6 +45,7 @@
     "es5-shim": "~4.1.10",
     "react": "~0.14.0",
     "react-addons-test-utils": "15.3.2",
-    "react-dom": "~0.14.0"
+    "react-dom": "~0.14.0",
+    "react-zeroclipboard": "^3.2.2"
   }
 }

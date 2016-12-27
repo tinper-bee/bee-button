@@ -31,12 +31,34 @@ class Demo1 extends Component {
 }
 /**
  *
+ * @title 事件按钮
+ * @description 点击按钮触发事件
+ *
+ */
+
+class Demo2 extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    handleClick() {
+        alert("谢谢你点我")
+    }
+
+    render() {
+        return (
+            <Button colors="primary" onClick={ this.handleClick }>事件按钮</Button>
+        )
+    }
+}
+/**
+ *
  * @title 不同颜色的按钮
  * @description 通过`colors`属性控制按钮颜色
  *
  */
 
-class Demo2 extends Component {
+class Demo3 extends Component {
 
     render () {
         return (
@@ -51,27 +73,6 @@ class Demo2 extends Component {
                     <Button shape="border" colors="info">warning</Button>
                     <Button shape="border" colors="danger">danger</Button>
             </div>
-        )
-    }
-}
-/**
- *
- * @title 事件按钮
- * @description 点击按钮触发事件
- *
- */
-
-class Demo3 extends Component {
-    constructor(props){
-        super(props);
-    }
-    handleClick(){
-        alert("谢谢你点我")
-    }
-
-    render () {
-        return (
-                <Button colors="primary" onClick={ this.handleClick }>事件按钮</Button>
         )
     }
 }
@@ -94,7 +95,7 @@ class Demo4 extends Component {
         )
     }
 }
-var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮","code":"/**\r\n *\r\n * @title 默认按钮\r\n * @description 基础按钮\r\n *\r\n */\r\n\r\nclass Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button>Default</Button>\r\n                <Button disabled>disabled</Button>\r\n                <Button shape=\"border\">border</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 基础按钮"},{"example":<Demo2 />,"title":" 不同颜色的按钮","code":"/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nclass Demo2 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">info</Button>\r\n                    <Button shape=\"border\" colors=\"info\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`colors`属性控制按钮颜色"},{"example":<Demo3 />,"title":" 事件按钮","code":"/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nclass Demo3 extends Component {\r\n    constructor(props){\r\n        super(props);\r\n    }\r\n    handleClick(){\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render () {\r\n        return (\r\n                <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n","desc":" 点击按钮触发事件"},{"example":<Demo4 />,"title":" 不同大小的按钮","code":"/**\r\n *\r\n * @title 不同大小的按钮\r\n * @description 通过`size`属性控制按钮大小\r\n *\r\n */\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`size`属性控制按钮大小"}]
+var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮","code":"/**\r\n *\r\n * @title 默认按钮\r\n * @description 基础按钮\r\n *\r\n */\r\n\r\nclass Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button>Default</Button>\r\n                <Button disabled>disabled</Button>\r\n                <Button shape=\"border\">border</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 基础按钮"},{"example":<Demo2 />,"title":" 事件按钮","code":"/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nclass Demo2 extends Component {\r\n    constructor(props) {\r\n        super(props);\r\n    }\r\n\r\n    handleClick() {\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n","desc":" 点击按钮触发事件"},{"example":<Demo3 />,"title":" 不同颜色的按钮","code":"/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nclass Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">info</Button>\r\n                    <Button shape=\"border\" colors=\"info\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`colors`属性控制按钮颜色"},{"example":<Demo4 />,"title":" 不同大小的按钮","code":"/**\r\n *\r\n * @title 不同大小的按钮\r\n * @description 通过`size`属性控制按钮大小\r\n *\r\n */\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`size`属性控制按钮大小"}]
 
 
 class Demo extends Component {
@@ -121,12 +122,23 @@ class Demo extends Component {
             </Button>
         );
 
-
+        const header = (
+            <Row>
+                <Col md={11}>
+                { example }
+                </Col>
+                <Col md={1}>
+                <Button shape="icon" onClick={ this.handleClick }>
+                    { caret }
+                </Button>
+                </Col>
+            </Row>
+        );
         return (
             <Col md={12} >
                 <h3>{ title }</h3>
                 <p>{ desc }</p>
-                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
+                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>
             </Col>

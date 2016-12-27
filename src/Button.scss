@@ -106,6 +106,7 @@ input.u-button[type="submit"] {
     }
 }
 
+
 .u-button-primary{
     @include button-styles-variant($button-text-color,$button-primary-color,$button-primary-hover-color,$button-primary-active-color);
 }
@@ -121,9 +122,7 @@ input.u-button[type="submit"] {
 .u-button-success{
     @include button-styles-variant($button-text-color,$button-success-color,$button-success-hover-color,$button-success-active-color);
 }
-.u-button-border.u-button-accent{
-    @include border-button-styles-variant($button-fab-color-alt,$button-fab-color-alt,$button-fab-color-alt,$button-fab-active-color-alt);
-}
+
 .u-button-border.u-button-success{
     @include border-button-styles-variant($button-success-color,$button-success-color,$button-success-hover-color,$button-success-active-color);
 }

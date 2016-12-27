@@ -746,18 +746,6 @@ input.u-button[type="submit"] {
     background-color: rgb(56,142,60);
     border-color: rgb(56,142,60); }
 
-.u-button-border.u-button-accent {
-  color: rgb(67,160,71);
-  border: 1px rgb(67,160,71) solid; }
-  .u-button-border.u-button-accent.focus, .u-button-border.u-button-accent:focus, .u-button-border.u-button-accent:hover {
-    background-color: rgb(67,160,71);
-    border-color: rgb(67,160,71);
-    color: #fff; }
-  .u-button-border.u-button-accent.active, .u-button-border.u-button-accent:active {
-    color: #fff;
-    background-color: rgb(67,160,71);
-    border-color: rgb(67,160,71); }
-
 .u-button-border.u-button-success {
   color: rgb(76,175,80);
   border: 1px rgb(76,175,80) solid; }

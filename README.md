@@ -42,7 +42,7 @@ import "./node_modules/bee-button/build/Button.css"
 ## API
 
 |参数|说明|类型|默认值|
-|:---|:-----|:----|:------|
+|:---|:----:|:---:|------:|
 |size|按钮大小(`lg` `xg` `sm`)|string|-|
 |colors|颜色(primary/accent/success/info/warning/danger/default)|string|''|
 |shape|形状(block/round/squared/floating/pillRight/pillLeft/border/icon)|string|''|

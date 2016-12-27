@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "tinper-bee-core": "0.0.20"
+    "tinper-bee-core": "latest"
   },
   "devDependencies": {
     "bee-layout": "latest",
@@ -45,6 +45,7 @@
     "es5-shim": "~4.1.10",
     "react": "~0.14.0",
     "react-addons-test-utils": "15.3.2",
-    "react-dom": "~0.14.0"
+    "react-dom": "~0.14.0",
+    "react-zeroclipboard": "^3.2.2"
   }
 }

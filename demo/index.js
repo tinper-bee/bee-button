@@ -6,9 +6,9 @@ import ReactDOM from 'react-dom';
 import Button from '../src';
 
 
-const CARET = <i className="uf uf-chevronarrowdown"></i>;
+const CARET = <i className="uf uf-arrow-down"></i>;
 
-const CARETUP = <i className="uf uf-chevronarrowup"></i>;
+const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
 /**
@@ -121,24 +121,11 @@ class Demo extends Component {
                 { text }
             </Button>
         );
-
-        const header = (
-            <Row>
-                <Col md={11}>
-                { example }
-                </Col>
-                <Col md={1}>
-                <Button shape="icon" onClick={ this.handleClick }>
-                    { caret }
-                </Button>
-                </Col>
-            </Row>
-        );
         return (
             <Col md={12} >
                 <h3>{ title }</h3>
                 <p>{ desc }</p>
-                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
+                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>
             </Col>

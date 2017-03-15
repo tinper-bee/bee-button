@@ -14,7 +14,9 @@ const propTypes = {
   /**
    * @title 形状
    */
-  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'border', 'icon']),
+  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
+
+  bordered:  PropTypes.bool,
    /**
    * @title 类型
    */
@@ -40,7 +42,8 @@ const propTypes = {
 const defaultProps = {
   disabled: false,
   htmlType: 'button',
-  clsPrefix: 'u-button'
+  clsPrefix: 'u-button',
+  bordered: false,
 
 }
 
@@ -60,7 +63,6 @@ const sizeMap = {
     shapeMap = {
         block: 'block',
         round: 'round',
-        border: 'border',
         squared: 'squared',
         floating: 'floating',
         pillRight: 'pill-right',
@@ -79,6 +81,7 @@ class Button extends Component {
             disabled,
             className,
             size,
+            bordered,
             children,
             htmlType,
             clsPrefix,
@@ -96,6 +99,7 @@ class Button extends Component {
         if (colorsMap[colors]) {
             clsObj[`${clsPrefix}-${colorsMap[colors]}`] = true;
         }
+        clsObj[`${clsPrefix}-border`] = bordered;
         let classes = classnames(clsPrefix, clsObj);
         return (
             <button

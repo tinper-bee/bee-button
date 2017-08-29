@@ -6,9 +6,9 @@ import ReactDOM from 'react-dom';
 import Button from '../src';
 
 
-const CARET = <i className="uf uf-chevronarrowdown"></i>;
+const CARET = <i className="uf uf-arrow-down"></i>;
 
-const CARETUP = <i className="uf uf-chevronarrowup"></i>;
+const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
 var Demo1 = require("./demolist/Demo1");var Demo2 = require("./demolist/Demo2");var Demo3 = require("./demolist/Demo3");var Demo4 = require("./demolist/Demo4");var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮","code":"/**\n *\n * @title 默认按钮\n * @description 基础按钮\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'tinper-bee';\n\n\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Button>Default</Button>\n                <Button disabled>disabled</Button>\n                <Button shape=\"border\">border</Button>\n            </div>\n        )\n    }\n}\n","desc":" 基础按钮"},{"example":<Demo2 />,"title":" 事件按钮","code":"/**\n *\n * @title 事件按钮\n * @description 点击按钮触发事件\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'tinper-bee';\n\n\n    constructor(props) {\n        super(props);\n    }\n\n    handleClick() {\n        alert(\"谢谢你点我\")\n    }\n\n    render() {\n        return (\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\n        )\n    }\n}\n","desc":" 点击按钮触发事件"},{"example":<Demo3 />,"title":" 不同颜色的按钮","code":"/**\n *\n * @title 不同颜色的按钮\n * @description 通过`colors`属性控制按钮颜色\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'tinper-bee';\n\n\n\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                    <Button colors=\"success\">success</Button>\n                    <Button colors=\"info\">info</Button>\n                    <Button colors=\"warning\">warning</Button>\n                    <Button colors=\"danger\">danger</Button>\n                <div className=\"divider\"></div>\n                    <Button shape=\"border\" colors=\"success\">success</Button>\n                    <Button shape=\"border\" colors=\"warning\">info</Button>\n                    <Button shape=\"border\" colors=\"info\">warning</Button>\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\n            </div>\n        )\n    }\n}\n","desc":" 通过`colors`属性控制按钮颜色"},{"example":<Demo4 />,"title":" 不同大小的按钮","code":"/**\n *\n * @title 不同大小的按钮\n * @description 通过`size`属性控制按钮大小\n *\n */\n\nimport React, { Component } from 'react';\nimport Button from 'tinper-bee';\n\n\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\n                <Button colors=\"primary\">默认</Button>\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\n            </div>\n        )\n    }\n}\n","desc":" 通过`size`属性控制按钮大小"}]
@@ -37,24 +37,11 @@ class Demo extends Component {
                 { text }
             </Button>
         );
-
-        const header = (
-            <Row>
-                <Col md={11}>
-                { example }
-                </Col>
-                <Col md={1}>
-                <Button shape="icon" onClick={ this.handleClick }>
-                    { caret }
-                </Button>
-                </Col>
-            </Row>
-        );
         return (
             <Col md={12} >
                 <h3>{ title }</h3>
                 <p>{ desc }</p>
-                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ header } footer={footer} footerStyle = {{padding: 0}}>
+                <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
                 </Panel>
             </Col>

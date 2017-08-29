@@ -45,8 +45,9 @@ import "./node_modules/bee-button/build/Button.css"
 |:---|:----:|:---:|------:|
 |size|按钮大小(`lg` `xg` `sm`)|string|-|
 |colors|颜色(primary/accent/success/info/warning/danger/default)|string|''|
-|shape|形状(block/round/squared/floating/pillRight/pillLeft/border/icon)|string|''|
-|disabled|是否禁用(`disabled` 或 `true` `false`)|string|false|
+|shape|形状(block/round/squared/floating/pillRight/pillLeft/icon)|string|''|
+|disabled|是否禁用(`disabled` 或 `true` `false`)|boolean|false|
+|bordered|是否是边框型(`bordered` 或 `true` `false`)|boolean|false|
 |className|增加额外的class|string|''|
 |htmlType|html dom 的 type 属性(`submit` `button` `reset`)|string|button|
 |style|style 属性|object|''|

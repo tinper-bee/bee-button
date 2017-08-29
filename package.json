@@ -1,10 +1,6 @@
 {
   "name": "bee-button",
-<<<<<<< HEAD
-  "version": "0.2.3",
-=======
-  "version": "0.2.6",
->>>>>>> 3b9b6a615ba67c8a7f007a0a2793dfa1f2691a8d
+  "version": "0.2.7",
   "description": "tinper-bee button ui component for react",
   "keywords": [
     "react",

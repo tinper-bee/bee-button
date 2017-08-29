@@ -5,7 +5,10 @@
  *
  */
 
-class Demo2 extends Component {
+import React, { Component } from 'react';
+import Button from '../../src';
+
+export default class Demo2 extends Component {
     constructor(props) {
         super(props);
     }

@@ -5,7 +5,10 @@
  *
  */
 
-class Demo4 extends Component {
+import React, { Component } from 'react';
+import Button from '../../src';
+
+export default class Demo4 extends Component {
     render () {
         return (
             <div className="demoPadding">

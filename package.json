@@ -36,6 +36,7 @@
     "bee-layout": "^0.2.2",
     "bee-panel": "^0.2.1",
     "classnames": "^2.2.5",
+    "babel-runtime": "^6.23.0",
     "tinper-bee-core": "latest"
   },
   "devDependencies": {

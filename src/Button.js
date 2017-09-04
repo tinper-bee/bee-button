@@ -14,7 +14,7 @@ const propTypes = {
   /**
    * @title 形状
    */
-  shape: PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
+  shape: PropTypes.oneOf(['block', 'round','border', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
 
   bordered:  PropTypes.bool,
    /**
@@ -63,6 +63,7 @@ const sizeMap = {
     shapeMap = {
         block: 'block',
         round: 'round',
+        border: 'border',
         squared: 'squared',
         floating: 'floating',
         pillRight: 'pill-right',
@@ -93,13 +94,14 @@ class Button extends Component {
         if (sizeMap[size]) {
             clsObj[`${clsPrefix}-${sizeMap[size]}`] = true;
         }
+
         if (shapeMap[shape]) {
             clsObj[`${clsPrefix}-${shapeMap[shape]}`] = true;
         }
         if (colorsMap[colors]) {
             clsObj[`${clsPrefix}-${colorsMap[colors]}`] = true;
         }
-        clsObj[`${clsPrefix}-border`] = bordered;
+        //clsObj[`${clsPrefix}-border`] = bordered;
         let classes = classnames(clsPrefix, clsObj);
         return (
             <button

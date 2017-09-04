@@ -42,7 +42,7 @@ var propTypes = {
     /**
      * @title 形状
      */
-    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
+    shape: _react.PropTypes.oneOf(['block', 'round', 'border', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
 
     bordered: _react.PropTypes.bool,
     /**
@@ -91,6 +91,7 @@ var sizeMap = {
     shapeMap = {
     block: 'block',
     round: 'round',
+    border: 'border',
     squared: 'squared',
     floating: 'floating',
     pillRight: 'pill-right',
@@ -108,18 +109,17 @@ var Button = function (_Component) {
     }
 
     Button.prototype.render = function render() {
-        var _props = this.props;
-        var colors = _props.colors;
-        var shape = _props.shape;
-        var disabled = _props.disabled;
-        var className = _props.className;
-        var size = _props.size;
-        var bordered = _props.bordered;
-        var children = _props.children;
-        var htmlType = _props.htmlType;
-        var clsPrefix = _props.clsPrefix;
-
-        var others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'bordered', 'children', 'htmlType', 'clsPrefix']);
+        var _props = this.props,
+            colors = _props.colors,
+            shape = _props.shape,
+            disabled = _props.disabled,
+            className = _props.className,
+            size = _props.size,
+            bordered = _props.bordered,
+            children = _props.children,
+            htmlType = _props.htmlType,
+            clsPrefix = _props.clsPrefix,
+            others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'bordered', 'children', 'htmlType', 'clsPrefix']);
 
         var clsObj = {};
         if (className) {
@@ -128,13 +128,14 @@ var Button = function (_Component) {
         if (sizeMap[size]) {
             clsObj[clsPrefix + '-' + sizeMap[size]] = true;
         }
+
         if (shapeMap[shape]) {
             clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
         }
         if (colorsMap[colors]) {
             clsObj[clsPrefix + '-' + colorsMap[colors]] = true;
         }
-        clsObj[clsPrefix + '-border'] = bordered;
+        //clsObj[`${clsPrefix}-border`] = bordered;
         var classes = (0, _classnames2["default"])(clsPrefix, clsObj);
         return _react2["default"].createElement(
             'button',

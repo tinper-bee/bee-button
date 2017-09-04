@@ -15,6 +15,7 @@ export default class Demo1 extends Component {
                 <Button>Default</Button>
                 <Button disabled>disabled</Button>
                 <Button shape="border">border</Button>
+                <Button shape="round">round</Button>
             </div>
         )
     }

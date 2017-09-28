@@ -14,6 +14,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -34,37 +38,37 @@ var propTypes = {
     /**
      * @title 尺寸
      */
-    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg']),
+    size: _propTypes2["default"].oneOf(['sm', 'xg', 'lg']),
     /**
      * @title 样式
      */
-    style: _react.PropTypes.object,
+    style: _propTypes2["default"].object,
     /**
      * @title 形状
      */
-    shape: _react.PropTypes.oneOf(['block', 'round', 'border', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
+    shape: _propTypes2["default"].oneOf(['block', 'round', 'border', 'squared', 'floating', 'pillRight', 'pillLeft', 'icon']),
 
-    bordered: _react.PropTypes.bool,
+    bordered: _propTypes2["default"].bool,
     /**
     * @title 类型
     */
-    colors: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
+    colors: _propTypes2["default"].oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
     /**
      * @title 是否禁用
      * @veIgnore
      */
-    disabled: _react.PropTypes.bool,
+    disabled: _propTypes2["default"].bool,
     /**
      * @title 类名
      * @veIgnore
      */
-    className: _react.PropTypes.string,
+    className: _propTypes2["default"].string,
 
     /**
      * @title <button> 的 type
      * @veIgnore
      */
-    htmlType: _react.PropTypes.oneOf(['submit', 'button', 'reset'])
+    htmlType: _propTypes2["default"].oneOf(['submit', 'button', 'reset'])
 };
 
 var defaultProps = {

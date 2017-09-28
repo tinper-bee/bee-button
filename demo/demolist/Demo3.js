@@ -19,8 +19,8 @@ export default class Demo3 extends Component {
                     <Button colors="danger">danger</Button>
                 <div className="divider"></div>
                     <Button shape="border" colors="success">success</Button>
-                    <Button shape="border" colors="warning">info</Button>
-                    <Button shape="border" colors="info">warning</Button>
+                    <Button shape="border" colors="warning">warning</Button>
+                    <Button shape="border" colors="info">info</Button>
                     <Button shape="border" colors="danger">danger</Button>
             </div>
         )

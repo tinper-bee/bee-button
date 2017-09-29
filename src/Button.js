@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+console.log(PropTypes);
 const propTypes = {
   /**
    * @title 尺寸

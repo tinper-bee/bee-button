@@ -1,7 +1,10 @@
 import React from 'react';
-import {shallow, mount, render} from 'enzyme';
+import Enzyme, {shallow, mount, render} from 'enzyme';
 import {expect} from 'chai';
 import Button from '../src/index';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('verifiy size', function () {
   it('Button should be exist', function () {

@@ -5453,8 +5453,37 @@ input.u-button[type="submit"] {
 .u-button-pill-right {
   border-radius: 0 500px 500px 0; }
 
-/* FormGroup */
+/*  IMAGES  */
+/* 默认颜色 */
+/* 客户化 */
+/* 波纹效果 */
+/*贝塞尔曲线动画 */
+/* 阴影 */
+/* ==========  文本字体  ========== */
+/* 控件 */
+/* 不同背景下对应的文字颜色 */
+/* UButton */
+/* UText */
 /*  Navlayout  */
+/* gridlayout */
+/* menu */
+/* Alert */
+/* Checkbox */
+/*  Radio  */
+/* Switch  */
+/* loading */
+/* datetimepicker */
+/* message */
+/* DATA TABLE */
+/* tooltip*/
+/* 进度条 */
+/* ==========  Content Tabs  ========== */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* ==========  Card  ========== */
+/* ============ Forms ============*/
+/* BADGE */
 .u-container {
   margin-right: auto;
   margin-left: auto;

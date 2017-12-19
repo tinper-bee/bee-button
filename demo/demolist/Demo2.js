@@ -8,7 +8,7 @@
 import React, { Component } from 'react';
 import Button from '../../src';
 
-export default class Demo2 extends Component {
+ class Demo2 extends Component {
     constructor(props) {
         super(props);
     }
@@ -23,3 +23,5 @@ export default class Demo2 extends Component {
         )
     }
 }
+
+export default Demo2;

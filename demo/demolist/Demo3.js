@@ -8,7 +8,7 @@
 import React, { Component } from 'react';
 import Button from '../../src';
 
-export default class Demo3 extends Component {
+ class Demo3 extends Component {
 
     render () {
         return (
@@ -26,3 +26,5 @@ export default class Demo3 extends Component {
         )
     }
 }
+
+export default Demo3;

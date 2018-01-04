@@ -1,6 +1,6 @@
 {
  "name": "bee-button",
- "version": "1.0.3",
+ "version": "1.0.4",
  "description": "tinper-bee button ui component for react",
  "keywords": [
   "react",
@@ -33,9 +33,9 @@
   "pub": "bee-tools run pub"
  },
  "dependencies": {
-  "classnames": "^2.2.5",
   "babel-runtime": "^6.23.0",
-  "tinper-bee-core": "latest"
+  "classnames": "^2.2.5",
+  "tinper-bee-core": "^0.4.1"
  },
  "peerDependencies": {
   "react": "^15.3.0 || ^16.0",

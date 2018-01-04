@@ -10,7 +10,6 @@
   position: relative;
   min-width: $button-min-width;
   padding: $button-padding;
-  padding: $button-padding-IE8 \9;
   display: inline-block;
   @include typo-button();
   overflow: hidden;
@@ -58,11 +57,9 @@ input.u-button[type="submit"] {
   border-radius: 50%;
   font-size: $button-fab-font-size;
   height: $button-fab-size;
-  height: 38px \9;
   margin: auto;
   min-width: $button-fab-size;
   width: $button-fab-size;
-  width: 38px \9;
   padding: 0;
   line-height: normal;
   border: 1px solid $button-border-color;

@@ -8,11 +8,11 @@
 import React, { Component } from 'react';
 import Button from '../../src';
 
-export default class Demo1 extends Component {
+ class Demo1 extends Component {
     render () {
         return (
             <div className="demoPadding">
-                <Button>Default</Button>
+                <Button isSubmit={true}>Default</Button>
                 <Button disabled>disabled</Button>
                 <Button shape="border">border</Button>
                 <Button shape="round">round</Button>
@@ -20,3 +20,5 @@ export default class Demo1 extends Component {
         )
     }
 }
+
+export default Demo1;

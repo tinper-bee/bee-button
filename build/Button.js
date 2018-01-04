@@ -68,15 +68,16 @@ var propTypes = {
      * @title <button> 的 type
      * @veIgnore
      */
-    htmlType: _propTypes2["default"].oneOf(['submit', 'button', 'reset'])
+    htmlType: _propTypes2["default"].oneOf(['submit', 'button', 'reset']),
+    isSubmit: _propTypes2["default"].bool //是否作为form的提交按钮
 };
 
 var defaultProps = {
     disabled: false,
     htmlType: 'button',
     clsPrefix: 'u-button',
-    bordered: false
-
+    bordered: false,
+    isSubmit: false
 };
 
 var sizeMap = {
@@ -123,7 +124,8 @@ var Button = function (_Component) {
             children = _props.children,
             htmlType = _props.htmlType,
             clsPrefix = _props.clsPrefix,
-            others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'bordered', 'children', 'htmlType', 'clsPrefix']);
+            isSubmit = _props.isSubmit,
+            others = _objectWithoutProperties(_props, ['colors', 'shape', 'disabled', 'className', 'size', 'bordered', 'children', 'htmlType', 'clsPrefix', 'isSubmit']);
 
         var clsObj = {};
         if (className) {

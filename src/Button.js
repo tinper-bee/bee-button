@@ -38,6 +38,7 @@ const propTypes = {
    * @veIgnore
    */
   htmlType: PropTypes.oneOf(['submit', 'button', 'reset']),
+  isSubmit:PropTypes.bool//是否作为form的提交按钮
 }
 
 const defaultProps = {
@@ -45,7 +46,7 @@ const defaultProps = {
   htmlType: 'button',
   clsPrefix: 'u-button',
   bordered: false,
-
+  isSubmit:false
 }
 
 const sizeMap = {
@@ -87,6 +88,7 @@ class Button extends Component {
             children,
             htmlType,
             clsPrefix,
+            isSubmit,
             ...others} = this.props;
         let clsObj = {};
         if (className) {

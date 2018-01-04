@@ -1,6 +1,6 @@
 {
  "name": "bee-button",
- "version": "1.0.4",
+ "version": "1.0.5",
  "description": "tinper-bee button ui component for react",
  "keywords": [
   "react",
@@ -20,7 +20,10 @@
  "license": "MIT",
  "main": "./build/index",
  "config": {
-  "port": 6666
+  "port": 6666,
+  "commitizen": {
+   "path": "./node_modules/cz-conventional-changelog"
+  }
  },
  "scripts": {
   "dev": "bee-tools run start",
@@ -48,6 +51,7 @@
   "bee-panel": "^1.0.0",
   "chai": "^3.5.0",
   "console-polyfill": "~0.2.1",
+  "cz-conventional-changelog": "^2.1.0",
   "enzyme": "^3.0.0",
   "enzyme-adapter-react-16": "^1.0.2",
   "es5-shim": "~4.1.10",

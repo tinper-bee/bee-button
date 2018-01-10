@@ -26,7 +26,7 @@ class Demo extends Component {
     }
 
     render () {
-        const { title, example, code, desc  } = this.props;
+        const { title, example, code, desc, scss_code  } = this.props;
         let caret = this.state.open ? CARETUP : CARET;
         let text = this.state.open ? "隐藏代码" : "查看代码";
 
@@ -42,6 +42,7 @@ class Demo extends Component {
                 <p>{ desc }</p>
                 <Panel collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}>
                     <pre><code className="hljs javascript">{ code }</code></pre>
+                    { scss_code ? <pre><code className="hljs css">{ scss_code }</code></pre> : null }
                 </Panel>
             </Col>
         )
@@ -58,7 +59,7 @@ class DemoGroup extends Component {
                     {DemoArray.map((child,index) => {
 
                         return (
-                            <Demo example= {child.example} title= {child.title} code= {child.code} desc= {child.desc} key= {index}/>
+                            <Demo example= {child.example} title= {child.title} code= {child.code} scss_code= {child.scss_code} desc= {child.desc} key= {index}/>
                         )
 
                     })}

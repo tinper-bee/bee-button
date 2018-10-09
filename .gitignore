@@ -38,3 +38,5 @@ jspm_packages
 coverage
 
 .idea/
+.DS_Store
+package-lock.json

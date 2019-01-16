@@ -21,7 +21,7 @@ const propTypes = {
    /**
    * @title 类型
    */
-  colors: PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger','default']),
+  colors: PropTypes.oneOf(['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'danger','default']),
   /**
    * @title 是否禁用
    * @veIgnore
@@ -56,6 +56,7 @@ const sizeMap = {
     },
     colorsMap = {
         primary: 'primary',
+        secondary: 'secondary',
         accent: 'accent',
         success: 'success',
         info: 'info',

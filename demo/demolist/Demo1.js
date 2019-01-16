@@ -1,7 +1,7 @@
 /**
  *
  * @title 默认按钮
- * @description 基础按钮
+ * @description 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]
  *
  */
 
@@ -12,10 +12,9 @@ import Button from '../../src';
     render () {
         return (
             <div className="demoPadding">
-                <Button isSubmit={true}>Default</Button>
-                <Button disabled>disabled</Button>
-                <Button shape="border">border</Button>
-                <Button shape="round">round</Button>
+                <Button colors="primary">主按钮</Button>
+                <Button colors="secondary">次按钮</Button>
+                <Button>default</Button>
             </div>
         )
     }

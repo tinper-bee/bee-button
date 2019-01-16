@@ -1,30 +1,27 @@
 /**
  *
- * @title 不同颜色的按钮
- * @description 通过`colors`属性控制按钮颜色
+ * @title 事件按钮
+ * @description 点击按钮触发事件
  *
  */
 
 import React, { Component } from 'react';
 import Button from '../../src';
 
- class Demo3 extends Component {
+ class Demo2 extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-    render () {
+    handleClick() {
+        alert("谢谢你点我")
+    }
+
+    render() {
         return (
-            <div className="demoPadding">
-                    <Button colors="success">success</Button>
-                    <Button colors="info">info</Button>
-                    <Button colors="warning">warning</Button>
-                    <Button colors="danger">danger</Button>
-                <div className="divider"></div>
-                    <Button shape="border" colors="success">success</Button>
-                    <Button shape="border" colors="warning">warning</Button>
-                    <Button shape="border" colors="info">info</Button>
-                    <Button shape="border" colors="danger">danger</Button>
-            </div>
+            <Button colors="primary" onClick={ this.handleClick }>事件按钮</Button>
         )
     }
 }
 
-export default Demo3;
+export default Demo2;

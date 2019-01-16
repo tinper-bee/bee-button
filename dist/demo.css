@@ -2153,13 +2153,13 @@
   color: rgb(255,255,255) !important; }
 
 .bg-primary {
-  background-color: rgb(30,136,229) !important; }
+  background-color: rgb(231,0,18) !important; }
 
 .bg-primary-contrast {
   background-color: rgb(255,255,255) !important; }
 
 .bg-primary-dark {
-  background-color: rgb(21,101,192) !important; }
+  background-color: rgb(200,0,16) !important; }
 
 .bg-accent {
   background-color: rgb(67,160,71) !important; }
@@ -2168,13 +2168,13 @@
   background-color: rgb(255,255,255) !important; }
 
 .text-primary {
-  color: rgb(30,136,229) !important; }
+  color: rgb(231,0,18) !important; }
 
 .text-primary-contrast {
   color: rgb(255,255,255) !important; }
 
 .text-primary-dark {
-  color: rgb(21,101,192) !important; }
+  color: rgb(200,0,16) !important; }
 
 .text-accent {
   color: rgb(67,160,71) !important; }
@@ -2419,9 +2419,6 @@ i.uf {
 /*
  * 选择时删除文本阴影，及设置默认选中颜色
  */
-::-moz-selection {
-  background: rgb(187,222,251);
-  text-shadow: none; }
 ::selection {
   background: rgb(187,222,251);
   text-shadow: none; }
@@ -5206,8 +5203,8 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 /* FormGroup */
 /*  Navlayout  */
 .u-button {
-  background: rgb(224,224,224);
-  border: none;
+  background: rgb(100,181,246);
+  border: 1px solid rgb(100,181,246);
   border-radius: 4px;
   color: rgb(0,0,0);
   position: relative;
@@ -5230,13 +5227,16 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   .u-button::-moz-focus-inner {
     border: 0; }
   .u-button:hover {
-    background-color: rgb(238,238,238); }
+    background-color: rgb(238,238,238);
+    border-color: rgb(238,238,238); }
   .u-button:active {
-    background-color: rgb(189,189,189); }
+    background-color: rgb(189,189,189);
+    border-color: rgb(189,189,189); }
   .u-button.colored {
-    color: rgb(30,136,229); }
+    color: rgb(231,0,18); }
     .u-button.colored:focus:not(:active) {
-      background-color: rgb(189,189,189); }
+      background-color: rgb(189,189,189);
+      border-color: rgb(189,189,189); }
   .u-button.disable {
     -webkit-box-shadow: none;
     filter: alpha(opacity=65);
@@ -5256,7 +5256,7 @@ input.u-button[type="submit"] {
   width: 38px;
   padding: 0;
   line-height: normal;
-  border: 1px solid rgb(224,224,224); }
+  border: 1px solid rgb(189,189,189); }
   .u-button-floating.colored {
     background: rgb(67,160,71);
     color: rgb(255,255,255);
@@ -5282,16 +5282,44 @@ input.u-button[type="submit"] {
     background-color: #e6e6e6;
     border-color: #adadad; }
 
+.u-button-border {
+  color: rgb(231,0,18);
+  border: 1px solid rgb(189,189,189);
+  background: rgb(255,255,255); }
+  .u-button-border:hover {
+    color: rgb(0,0,0);
+    background-color: rgb(238,238,238);
+    border-color: rgb(238,238,238); }
+  .u-button-border:active {
+    color: rgb(0,0,0);
+    background-color: rgb(189,189,189);
+    border-color: rgb(189,189,189); }
+  .u-button-border:focus:not(:active) {
+    color: rgb(0,0,0);
+    background-color: rgb(189,189,189);
+    border-color: rgb(189,189,189); }
+
 .u-button-primary {
   color: rgb(255,255,255);
-  background-color: rgb(30,136,229);
-  border: 1px rgb(30,136,229) solid; }
+  background-color: rgb(231,0,18);
+  border: 1px rgb(231,0,18) solid; }
   .u-button-primary.focus, .u-button-primary:focus, .u-button-primary:hover {
-    background-color: rgb(66,165,245);
-    border-color: rgb(66,165,245); }
+    background-color: rgb(233,71,84);
+    border-color: rgb(233,71,84); }
   .u-button-primary.active, .u-button-primary:active {
-    background-color: rgb(21,101,192);
-    border-color: rgb(21,101,192); }
+    background-color: rgb(200,0,16);
+    border-color: rgb(200,0,16); }
+
+.u-button-secondary {
+  color: "231,0,18";
+  background-color: rgb(235,236,240);
+  border: 1px rgb(235,236,240) solid; }
+  .u-button-secondary.focus, .u-button-secondary:focus, .u-button-secondary:hover {
+    background-color: rgb(239,154,154);
+    border-color: rgb(239,154,154); }
+  .u-button-secondary.active, .u-button-secondary:active {
+    background-color: rgb(239,83,80);
+    border-color: rgb(239,83,80); }
 
 .u-button-danger {
   color: rgb(255,255,255);
@@ -5339,6 +5367,7 @@ input.u-button[type="submit"] {
 
 .u-button-border.u-button-success {
   color: rgb(76,175,80);
+  background-color: #fff;
   border: 1px rgb(76,175,80) solid; }
   .u-button-border.u-button-success.focus, .u-button-border.u-button-success:focus, .u-button-border.u-button-success:hover {
     background-color: rgb(129,199,132);
@@ -5351,6 +5380,7 @@ input.u-button[type="submit"] {
 
 .u-button-border.u-button-warning {
   color: rgb(255,152,0);
+  background-color: #fff;
   border: 1px rgb(255,152,0) solid; }
   .u-button-border.u-button-warning.focus, .u-button-border.u-button-warning:focus, .u-button-border.u-button-warning:hover {
     background-color: rgb(255,183,77);
@@ -5363,6 +5393,7 @@ input.u-button[type="submit"] {
 
 .u-button-border.u-button-danger {
   color: rgb(244,67,54);
+  background-color: #fff;
   border: 1px rgb(244,67,54) solid; }
   .u-button-border.u-button-danger.focus, .u-button-border.u-button-danger:focus, .u-button-border.u-button-danger:hover {
     background-color: rgb(229,115,115);
@@ -5375,6 +5406,7 @@ input.u-button[type="submit"] {
 
 .u-button-border.u-button-info {
   color: rgb(0,188,212);
+  background-color: #fff;
   border: 1px rgb(0,188,212) solid; }
   .u-button-border.u-button-info.focus, .u-button-border.u-button-info:focus, .u-button-border.u-button-info:hover {
     background-color: rgb(77,208,225);
@@ -5386,29 +5418,17 @@ input.u-button[type="submit"] {
     border-color: rgb(0,151,167); }
 
 .u-button-border.u-button-primary {
-  color: rgb(30,136,229);
-  border: 1px rgb(30,136,229) solid; }
+  color: rgb(231,0,18);
+  background-color: #fff;
+  border: 1px rgb(231,0,18) solid; }
   .u-button-border.u-button-primary.focus, .u-button-border.u-button-primary:focus, .u-button-border.u-button-primary:hover {
-    background-color: rgb(66,165,245);
-    border-color: rgb(66,165,245);
+    background-color: rgb(233,71,84);
+    border-color: rgb(233,71,84);
     color: #fff; }
   .u-button-border.u-button-primary.active, .u-button-border.u-button-primary:active {
     color: #fff;
-    background-color: rgb(21,101,192);
-    border-color: rgb(21,101,192); }
-
-.u-button-border {
-  color: rgb(0,0,0);
-  border: 1px solid #d9d9d9;
-  background-color: #fff; }
-
-.u-button-border:hover, .u-button-border:focus {
-  color: rgb(0,0,0);
-  background: rgb(238,238,238); }
-
-.u-button-border:active {
-  color: #fff;
-  background: rgb(189,189,189); }
+    background-color: rgb(200,0,16);
+    border-color: rgb(200,0,16); }
 
 .u-button-icon {
   border-radius: 50%;
@@ -5419,7 +5439,7 @@ input.u-button[type="submit"] {
   width: 32px;
   padding: 0;
   line-height: normal;
-  border: 1px solid rgb(224,224,224); }
+  border: 1px solid rgb(189,189,189); }
 
 .u-button-lg {
   padding: 8px 15px;
@@ -6114,7 +6134,7 @@ input.u-button[type="submit"] {
   .u-panel .u-panel-body {
     padding: 15px 15px;
     position: relative; }
-    .u-panel .u-panel-body .uf {
+    .u-panel .u-panel-body .u-panel-copy {
       position: absolute;
       right: 25px;
       top: 30px;
@@ -6124,7 +6144,7 @@ input.u-button[type="submit"] {
       margin: 8px;
       border-radius: 4px;
       cursor: pointer; }
-      .u-panel .u-panel-body .uf:hover {
+      .u-panel .u-panel-body .u-panel-copy:hover {
         color: #a8a7a7; }
 
 .u-panel-default {

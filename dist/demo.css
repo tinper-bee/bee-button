@@ -2153,13 +2153,13 @@
   color: rgb(255,255,255) !important; }
 
 .bg-primary {
-  background-color: rgb(231,0,18) !important; }
+  background-color: rgb(30,136,229) !important; }
 
 .bg-primary-contrast {
   background-color: rgb(255,255,255) !important; }
 
 .bg-primary-dark {
-  background-color: rgb(200,0,16) !important; }
+  background-color: rgb(21,101,192) !important; }
 
 .bg-accent {
   background-color: rgb(67,160,71) !important; }
@@ -2168,13 +2168,13 @@
   background-color: rgb(255,255,255) !important; }
 
 .text-primary {
-  color: rgb(231,0,18) !important; }
+  color: rgb(30,136,229) !important; }
 
 .text-primary-contrast {
   color: rgb(255,255,255) !important; }
 
 .text-primary-dark {
-  color: rgb(200,0,16) !important; }
+  color: rgb(21,101,192) !important; }
 
 .text-accent {
   color: rgb(67,160,71) !important; }
@@ -3475,6 +3475,33 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 
 .uf-treeline-copy:before {
   content: "\e994"; }
+
+.uf-listwithdots:before {
+  content: "\e9cd"; }
+
+.uf-gridlogo:before {
+  content: "\e900"; }
+
+.uf-magnifyingglass:before {
+  content: "\e9ce"; }
+
+.uf-anglearrowdown:before {
+  content: "\e9cf"; }
+
+.uf-yongyouyunchnen:before {
+  content: "\e98d"; }
+
+.uf-yycloud:before {
+  content: "\e68f"; }
+
+.uf-funnel-o:before {
+  content: "\e63c"; }
+
+.uf-filter:before {
+  content: "\e9d0"; }
+
+.uf-filterno:before {
+  content: "\e9d1"; }
 
 /* FormGroup */
 /*  Navlayout  */
@@ -5203,8 +5230,8 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 /* FormGroup */
 /*  Navlayout  */
 .u-button {
-  background: rgb(100,181,246);
-  border: 1px solid rgb(100,181,246);
+  background: rgb(224,224,224);
+  border: 1px solid rgb(224,224,224);
   border-radius: 4px;
   color: rgb(0,0,0);
   position: relative;
@@ -5233,9 +5260,9 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
   .u-button.colored {
-    color: rgb(231,0,18); }
+    color: rgb(30,136,229); }
     .u-button.colored:focus:not(:active) {
-      background-color: rgb(189,189,189);
+      background-color: rgb(238,238,238);
       border-color: rgb(189,189,189); }
   .u-button.disable {
     -webkit-box-shadow: none;
@@ -5283,43 +5310,43 @@ input.u-button[type="submit"] {
     border-color: #adadad; }
 
 .u-button-border {
-  color: rgb(231,0,18);
+  color: rgb(30,136,229);
   border: 1px solid rgb(189,189,189);
   background: rgb(255,255,255); }
   .u-button-border:hover {
-    color: rgb(0,0,0);
+    color: rgb(30,136,229);
     background-color: rgb(238,238,238);
-    border-color: rgb(238,238,238); }
+    border-color: rgb(189,189,189); }
   .u-button-border:active {
-    color: rgb(0,0,0);
+    color: rgb(30,136,229);
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
   .u-button-border:focus:not(:active) {
-    color: rgb(0,0,0);
-    background-color: rgb(189,189,189);
+    color: rgb(30,136,229);
+    background-color: rgb(238,238,238);
     border-color: rgb(189,189,189); }
 
 .u-button-primary {
   color: rgb(255,255,255);
-  background-color: rgb(231,0,18);
-  border: 1px rgb(231,0,18) solid; }
+  background-color: rgb(30,136,229);
+  border: 1px rgb(30,136,229) solid; }
   .u-button-primary.focus, .u-button-primary:focus, .u-button-primary:hover {
-    background-color: rgb(233,71,84);
-    border-color: rgb(233,71,84); }
+    background-color: rgb(66,165,245);
+    border-color: rgb(66,165,245); }
   .u-button-primary.active, .u-button-primary:active {
-    background-color: rgb(200,0,16);
-    border-color: rgb(200,0,16); }
+    background-color: rgb(21,101,192);
+    border-color: rgb(21,101,192); }
 
 .u-button-secondary {
-  color: "231,0,18";
-  background-color: rgb(235,236,240);
-  border: 1px rgb(235,236,240) solid; }
+  color: rgb(0,0,0);
+  background-color: rgb(224,224,224);
+  border: 1px rgb(224,224,224) solid; }
   .u-button-secondary.focus, .u-button-secondary:focus, .u-button-secondary:hover {
-    background-color: rgb(239,154,154);
-    border-color: rgb(239,154,154); }
+    background-color: rgb(238,238,238);
+    border-color: rgb(238,238,238); }
   .u-button-secondary.active, .u-button-secondary:active {
-    background-color: rgb(239,83,80);
-    border-color: rgb(239,83,80); }
+    background-color: rgb(189,189,189);
+    border-color: rgb(189,189,189); }
 
 .u-button-danger {
   color: rgb(255,255,255);
@@ -5418,17 +5445,17 @@ input.u-button[type="submit"] {
     border-color: rgb(0,151,167); }
 
 .u-button-border.u-button-primary {
-  color: rgb(231,0,18);
+  color: rgb(30,136,229);
   background-color: #fff;
-  border: 1px rgb(231,0,18) solid; }
+  border: 1px rgb(30,136,229) solid; }
   .u-button-border.u-button-primary.focus, .u-button-border.u-button-primary:focus, .u-button-border.u-button-primary:hover {
-    background-color: rgb(233,71,84);
-    border-color: rgb(233,71,84);
+    background-color: rgb(66,165,245);
+    border-color: rgb(66,165,245);
     color: #fff; }
   .u-button-border.u-button-primary.active, .u-button-border.u-button-primary:active {
     color: #fff;
-    background-color: rgb(200,0,16);
-    border-color: rgb(200,0,16); }
+    background-color: rgb(21,101,192);
+    border-color: rgb(21,101,192); }
 
 .u-button-icon {
   border-radius: 50%;

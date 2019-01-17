@@ -33,7 +33,7 @@
   .u-button.colored {
     color: rgb(30,136,229); }
     .u-button.colored:focus:not(:active) {
-      background-color: rgb(189,189,189);
+      background-color: rgb(238,238,238);
       border-color: rgb(189,189,189); }
   .u-button.disable {
     -webkit-box-shadow: none;
@@ -85,16 +85,16 @@ input.u-button[type="submit"] {
   border: 1px solid rgb(189,189,189);
   background: rgb(255,255,255); }
   .u-button-border:hover {
-    color: rgb(0,0,0);
+    color: rgb(30,136,229);
     background-color: rgb(238,238,238);
-    border-color: rgb(238,238,238); }
+    border-color: rgb(189,189,189); }
   .u-button-border:active {
-    color: rgb(0,0,0);
+    color: rgb(30,136,229);
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
   .u-button-border:focus:not(:active) {
-    color: rgb(0,0,0);
-    background-color: rgb(189,189,189);
+    color: rgb(30,136,229);
+    background-color: rgb(238,238,238);
     border-color: rgb(189,189,189); }
 
 .u-button-primary {
@@ -109,15 +109,15 @@ input.u-button[type="submit"] {
     border-color: rgb(21,101,192); }
 
 .u-button-secondary {
-  color: "30,136,229";
-  background-color: rgb(229,115,115);
-  border: 1px rgb(229,115,115) solid; }
+  color: rgb(0,0,0);
+  background-color: rgb(224,224,224);
+  border: 1px rgb(224,224,224) solid; }
   .u-button-secondary.focus, .u-button-secondary:focus, .u-button-secondary:hover {
-    background-color: rgb(239,154,154);
-    border-color: rgb(239,154,154); }
+    background-color: rgb(238,238,238);
+    border-color: rgb(238,238,238); }
   .u-button-secondary.active, .u-button-secondary:active {
-    background-color: rgb(239,83,80);
-    border-color: rgb(239,83,80); }
+    background-color: rgb(189,189,189);
+    border-color: rgb(189,189,189); }
 
 .u-button-danger {
   color: rgb(255,255,255);

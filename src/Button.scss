@@ -109,21 +109,21 @@ input.u-button[type="submit"] {
   border: $button-border-width $button-border-style $button-border-color;
   background: $button-border-bg-color;
   &:hover {
-    color: $button-default-text-color;
+    color: $button-border-text-color;
     background-color: $button-hover-color;
-    border-color: $button-hover-border-color;
+    border-color: $button-border-color;
   }
 
   &:active {
-    color: $button-default-text-color;
+    color: $button-border-text-color;
     background-color: $button-active-color;
-    border-color: $button-active-border-color;
+    border-color: $button-border-color;
   }
 
   &:focus:not(:active) {
-    color: $button-default-text-color;
+    color: $button-border-text-color;
     background-color: $button-focus-color;
-    border-color: $button-focus-border-color;
+    border-color: $button-border-color;
   }
 }
 
@@ -134,7 +134,7 @@ input.u-button[type="submit"] {
                                     $button-primary-active-color);
 }
 .u-button-secondary{
-  @include button-styles-variant( $button-secondary-text-color,
+  @include button-styles-variant( $button-second-text-color,
                                   $button-secondary-color,
                                   $button-secondary-hover-color,
                                   $button-secondary-active-color);

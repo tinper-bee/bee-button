@@ -127,37 +127,37 @@ input.u-button[type="submit"] {
   }
 }
 
-.u-button-primary{
+.u-button.u-button-primary{
     @include button-styles-variant( $button-text-color,
                                     $button-primary-color,
                                     $button-primary-hover-color,
                                     $button-primary-active-color);
 }
-.u-button-secondary{
+.u-button.u-button-secondary{
   @include button-styles-variant( $button-second-text-color,
                                   $button-secondary-color,
                                   $button-secondary-hover-color,
                                   $button-secondary-active-color);
 }
-.u-button-danger{
+.u-button.u-button-danger{
     @include button-styles-variant( $button-text-color,
                                     $button-danger-color,
                                     $button-danger-hover-color,
                                     $button-danger-active-color);
 }
-.u-button-info{
+.u-button.u-button-info{
     @include button-styles-variant( $button-text-color,
                                     $button-info-color,
                                     $button-info-hover-color,
                                     $button-info-active-color);
 }
-.u-button-warning{
+.u-button.u-button-warning{
     @include button-styles-variant( $button-text-color,
                                     $button-warning-color,
                                     $button-warning-hover-color,
                                     $button-warning-active-color);
 }
-.u-button-success{
+.u-button.u-button-success{
     @include button-styles-variant( $button-text-color,
                                     $button-success-color,
                                     $button-success-hover-color,
@@ -179,6 +179,9 @@ input.u-button[type="submit"] {
 
 .u-button-border.u-button-primary{
     @include border-button-styles-variant($button-primary-color,$button-primary-color,$button-primary-hover-color,$button-primary-active-color);
+}
+.u-button-border.u-button-secondary{
+  @include border-button-styles-variant($button-secondary-color,$button-secondary-color,$button-secondary-hover-color,$button-secondary-active-color);
 }
 
 .u-button-icon {

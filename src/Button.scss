@@ -163,6 +163,18 @@ input.u-button[type="submit"] {
                                     $button-success-hover-color,
                                     $button-success-active-color);
 }
+.u-button.u-button-dark{
+  @include button-styles-variant( $button-text-color,
+                                  $button-dark-color,
+                                  $button-dark-hover-color,
+                                  $button-dark-active-color);
+}
+.u-button.u-button-light{
+  @include button-styles-variant( $color-light,
+                                  $button-light-color,
+                                  $button-light-hover-color,
+                                  $button-light-active-color);
+}
 
 .u-button-border.u-button-success{
     @include border-button-styles-variant($button-success-color,$button-success-color,$button-success-hover-color,$button-success-active-color);
@@ -182,6 +194,12 @@ input.u-button[type="submit"] {
 }
 .u-button-border.u-button-secondary{
   @include border-button-styles-variant($button-secondary-color,$button-secondary-color,$button-secondary-hover-color,$button-secondary-active-color);
+}
+.u-button-border.u-button-dark{
+  @include border-button-styles-variant($button-dark-color,$button-dark-color,$button-dark-hover-color,$button-dark-active-color);
+}
+.u-button-border.u-button-light{
+  @include border-button-styles-variant($button-dark-color,$button-light-color,$button-light-hover-color,$button-light-active-color);
 }
 
 .u-button-icon {

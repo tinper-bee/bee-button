@@ -44,7 +44,7 @@ import "./node_modules/bee-button/build/Button.css"
 |参数|说明|类型|默认值|
 |:---|:----:|:---:|------:|
 |size|按钮大小(`lg` `xg` `sm`)|string|-|
-|colors|颜色(primary/secondary/accent/success/info/warning/danger/default)|string|''|
+|colors|颜色(primary/secondary/accent/success/info/warning/danger/dark/light/default)|string|''|
 |shape|形状(block/border/round/squared/floating/pillRight/pillLeft/icon)|string|''|
 |disabled|是否禁用(`disabled` 或 `true` `false`)|boolean|false|
 |bordered|是否是边框型(`bordered` 或 `true` `false`)|boolean|false|

@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(85);var Demo3 = __webpack_require__(86);var Demo4 = __webpack_require__(87);var Demo5 = __webpack_require__(88);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮", "code": "/**\r\n *\r\n * @title 默认按钮\r\n * @description 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\">主按钮</Button>\r\n                <Button colors=\"secondary\">次按钮</Button>\r\n                <Button>default</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 按钮属性、状态", "code": "/**\r\n *\r\n * @title 按钮属性、状态\r\n * @description 按钮属性、状态 [isSubmit 是否作为form的提交按钮]\r\n * \r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo5 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\" isSubmit={true}>Default</Button>\r\n                <Button colors=\"primary\" disabled>disabled</Button>\r\n                <Button shape=\"border\">border</Button>\r\n                <Button colors=\"primary\" shape=\"round\">round</Button> \r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 按钮属性、状态 [isSubmit 是否作为form的提交按钮]" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 事件按钮", "code": "/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo2 extends Component {\r\n    constructor(props) {\r\n        super(props);\r\n    }\r\n\r\n    handleClick() {\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 点击按钮触发事件", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 不同颜色的按钮", "code": "/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"info\">info</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`colors`属性控制按钮颜色", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo5, null), "title": " 不同大小的按钮", "code": "/**\r\n *\r\n * @title 不同大小的按钮\r\n * @description 通过`size`属性控制按钮大小\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`size`属性控制按钮大小", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }];
+	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(85);var Demo3 = __webpack_require__(86);var Demo4 = __webpack_require__(87);var Demo5 = __webpack_require__(88);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮", "code": "/**\r\n *\r\n * @title 默认按钮\r\n * @description 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\">主按钮</Button>\r\n                <Button colors=\"secondary\">次按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 按钮属性、状态", "code": "/**\r\n *\r\n * @title 按钮属性、状态\r\n * @description 按钮属性、状态 [isSubmit 是否作为form的提交按钮]\r\n * \r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo5 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\" isSubmit={true}>Default</Button>\r\n                <Button colors=\"primary\" disabled>disabled</Button>\r\n                <Button shape=\"border\">border</Button>\r\n                <Button colors=\"primary\" shape=\"round\">round</Button> \r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 按钮属性、状态 [isSubmit 是否作为form的提交按钮]" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 事件按钮", "code": "/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo2 extends Component {\r\n    constructor(props) {\r\n        super(props);\r\n    }\r\n\r\n    handleClick() {\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 点击按钮触发事件", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 不同颜色的按钮", "code": "/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                    <Button colors=\"dark\">dark</Button>\r\n                    <Button colors=\"light\">light</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"info\">info</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n                    <Button shape=\"border\" colors=\"dark\">dark</Button>\r\n                    <Button shape=\"border\" colors=\"light\">light</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`colors`属性控制按钮颜色", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo5, null), "title": " 不同大小的按钮", "code": "/**\r\n *\r\n * @title 不同大小的按钮\r\n * @description 通过`size`属性控制按钮大小\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`size`属性控制按钮大小", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -7813,7 +7813,7 @@
 	    /**
 	    * @title 类型
 	    */
-	    colors: _propTypes2['default'].oneOf(['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
+	    colors: _propTypes2['default'].oneOf(['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'danger', 'dark', 'light', 'default']),
 	    /**
 	     * @title 是否禁用
 	     * @veIgnore
@@ -7853,7 +7853,9 @@
 	    success: 'success',
 	    info: 'info',
 	    warning: 'warning',
-	    danger: 'danger'
+	    danger: 'danger',
+	    dark: 'dark',
+	    light: 'light'
 	},
 	    shapeMap = {
 	    block: 'block',
@@ -7980,11 +7982,6 @@
 	                _src2['default'],
 	                { colors: 'secondary' },
 	                '\u6B21\u6309\u94AE'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                null,
-	                'default'
 	            )
 	        );
 	    };
@@ -8196,6 +8193,16 @@
 	                { colors: 'danger' },
 	                'danger'
 	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'dark' },
+	                'dark'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'light' },
+	                'light'
+	            ),
 	            _react2['default'].createElement('div', { className: 'divider' }),
 	            _react2['default'].createElement(
 	                _src2['default'],
@@ -8216,6 +8223,16 @@
 	                _src2['default'],
 	                { shape: 'border', colors: 'danger' },
 	                'danger'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'dark' },
+	                'dark'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'light' },
+	                'light'
 	            )
 	        );
 	    };

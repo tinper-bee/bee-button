@@ -14,7 +14,6 @@ import Button from '../../src';
             <div className="demoPadding">
                 <Button colors="primary">主按钮</Button>
                 <Button colors="secondary">次按钮</Button>
-                <Button>default</Button>
             </div>
         )
     }

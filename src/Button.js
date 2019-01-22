@@ -21,7 +21,7 @@ const propTypes = {
    /**
    * @title 类型
    */
-  colors: PropTypes.oneOf(['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'danger','default']),
+  colors: PropTypes.oneOf(['primary', 'secondary', 'accent', 'success', 'info', 'warning', 'danger', 'dark', 'light' , 'default']),
   /**
    * @title 是否禁用
    * @veIgnore
@@ -61,7 +61,9 @@ const sizeMap = {
         success: 'success',
         info: 'info',
         warning: 'warning',
-        danger: 'danger'
+        danger: 'danger',
+        dark: 'dark',
+        light: 'light'
     },
     shapeMap = {
         block: 'block',

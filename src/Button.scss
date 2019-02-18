@@ -1,6 +1,10 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 
+$button-padding-y-md: 4px;
+$button-padding-x-md: 13px;
+$font-size-md: 14px;
+
 //默认 flat 样式.
 .u-button {
   background: $button-default-color;
@@ -223,7 +227,10 @@ input.u-button[type="submit"] {
 
   @include button-size($button-padding-y-xg, $button-padding-x-xg, $font-size-xg);
 }
-
+//中型（默认）
+.u-button-md {
+  @include button-size($button-padding-y-md, $button-padding-x-md, $font-size-md);
+}
 //小型
 .u-button-sm {
    @include button-size($button-padding-y-sm, $button-padding-x-sm, $font-size-sm);

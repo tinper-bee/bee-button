@@ -9,7 +9,7 @@
 
 |参数|说明|类型|默认值|
 |:---|:----:|:---:|------:|
-|size|按钮大小(`lg` `xg` `sm`)|string|-|
+|size|按钮大小(`lg` `xg` `md` `sm`)|string|-|
 |colors|颜色(primary/secondary/accent/success/info/warning/danger/dark/light/default)|string|''|
 |shape|形状(block/round/squared/floating/pillRight/pillLeft/icon)|string|''|
 |disabled|是否禁用(`disabled` 或 `true` `false`)|boolean|false|

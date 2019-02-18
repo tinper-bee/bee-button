@@ -7,7 +7,7 @@
   color: rgb(0,0,0);
   position: relative;
   min-width: 72px;
-  padding: 5px 13px;
+  padding: 4px 13px;
   display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 14px;
@@ -305,8 +305,12 @@ input.u-button[type="submit"] {
   font-size: 14px; }
 
 .u-button-xg {
-  padding: 10px 18px;
+  padding: 10.5px 18px;
   font-size: 16px; }
+
+.u-button-md {
+  padding: 4px 13px;
+  font-size: 14px; }
 
 .u-button-sm {
   padding: 3px 5px;

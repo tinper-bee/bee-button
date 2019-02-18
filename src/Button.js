@@ -7,7 +7,7 @@ const propTypes = {
   /**
    * @title 尺寸
    */
-  size: PropTypes.oneOf(['sm', 'xg', 'lg']),
+  size: PropTypes.oneOf(['sm', 'md', 'xg', 'lg']),
   /**
    * @title 样式
    */
@@ -51,6 +51,7 @@ const defaultProps = {
 
 const sizeMap = {
         sm: 'sm',
+        md: 'md',
         xg: 'xg',
         lg: 'lg'
     },

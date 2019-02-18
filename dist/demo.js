@@ -7799,7 +7799,7 @@
 	    /**
 	     * @title 尺寸
 	     */
-	    size: _propTypes2['default'].oneOf(['sm', 'xg', 'lg']),
+	    size: _propTypes2['default'].oneOf(['sm', 'md', 'xg', 'lg']),
 	    /**
 	     * @title 样式
 	     */
@@ -7843,6 +7843,7 @@
 	
 	var sizeMap = {
 	    sm: 'sm',
+	    md: 'md',
 	    xg: 'xg',
 	    lg: 'lg'
 	},

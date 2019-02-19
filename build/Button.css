@@ -81,19 +81,19 @@ input.u-button[type="submit"] {
     border-color: #adadad; }
 
 .u-button-border {
-  color: rgb(30,136,229);
+  color: rgb(0,0,0);
   border: 1px solid rgb(189,189,189);
   background: rgb(255,255,255); }
   .u-button-border:hover {
-    color: rgb(30,136,229);
+    color: rgb(0,0,0);
     background-color: rgb(238,238,238);
     border-color: rgb(189,189,189); }
   .u-button-border:active {
-    color: rgb(30,136,229);
+    color: rgb(0,0,0);
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
   .u-button-border:focus:not(:active) {
-    color: rgb(30,136,229);
+    color: rgb(0,0,0);
     background-color: rgb(238,238,238);
     border-color: rgb(189,189,189); }
 

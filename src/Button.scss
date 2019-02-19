@@ -109,23 +109,23 @@ input.u-button[type="submit"] {
 }
 
 .u-button-border{
-  color: $button-border-text-color;
+  color: $button-default-text-color;
   border: $button-border-width $button-border-style $button-border-color;
   background: $button-border-bg-color;
   &:hover {
-    color: $button-border-text-color;
+    color: $button-default-text-color;
     background-color: $button-hover-color;
     border-color: $button-border-color;
   }
 
   &:active {
-    color: $button-border-text-color;
+    color: $button-default-text-color;
     background-color: $button-active-color;
     border-color: $button-border-color;
   }
 
   &:focus:not(:active) {
-    color: $button-border-text-color;
+    color: $button-default-text-color;
     background-color: $button-focus-color;
     border-color: $button-border-color;
   }

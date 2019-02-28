@@ -10,7 +10,7 @@ $font-size-md: 14px;
   background: $button-default-color;
   // border: none;
   border: $button-border-width $button-border-style $button-default-border-color;
-  border-radius: $button-border-radius;
+  border-radius: $border-radius-base;
   color: $button-default-text-color;
   position: relative;
   min-width: $button-min-width;

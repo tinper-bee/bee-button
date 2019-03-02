@@ -102,7 +102,7 @@ input.u-button[type="submit"] {
     color: #333;
     background-color: #fff;
     border-color: #ccc;
-    &:hover,&:focus,&:active {
+    &:hover,&:active {
         background-color: #e6e6e6;
         border-color: #adadad;
     }
@@ -124,11 +124,11 @@ input.u-button[type="submit"] {
     border-color: $button-border-color;
   }
 
-  &:focus:not(:active) {
-    color: $button-default-text-color;
-    background-color: $button-focus-color;
-    border-color: $button-border-color;
-  }
+  // &:focus:not(:active) {
+  //   color: $button-default-text-color;
+  //   background-color: $button-focus-color;
+  //   border-color: $button-border-color;
+  // }
 }
 
 .u-button.u-button-primary{

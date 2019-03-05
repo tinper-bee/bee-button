@@ -1,3 +1,8 @@
+<a name="2.0.6"></a>
+## [2.0.6](https://github.com/tinper-bee/button/compare/v2.0.5...v2.0.6) (2019-03-05)
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/tinper-bee/button/compare/v2.0.4...v2.0.5) (2019-03-02)
 

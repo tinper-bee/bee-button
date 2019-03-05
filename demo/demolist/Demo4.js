@@ -18,14 +18,12 @@ import Button from '../../src';
                     <Button colors="warning">warning</Button>
                     <Button colors="danger">danger</Button>
                     <Button colors="dark">dark</Button>
-                    <Button colors="light">light</Button>
                 <div className="divider"></div>
                     <Button shape="border" colors="success">success</Button>
                     <Button shape="border" colors="info">info</Button>
                     <Button shape="border" colors="warning">warning</Button>
                     <Button shape="border" colors="danger">danger</Button>
                     <Button shape="border" colors="dark">dark</Button>
-                    <Button shape="border" colors="light">light</Button>
             </div>
         )
     }

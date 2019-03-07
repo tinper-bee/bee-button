@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(85);var Demo3 = __webpack_require__(86);var Demo4 = __webpack_require__(87);var Demo5 = __webpack_require__(88);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮", "code": "/**\r\n *\r\n * @title 默认按钮\r\n * @description 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\">主按钮</Button>\r\n                <Button colors=\"secondary\">次按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 按钮属性、状态", "code": "/**\r\n *\r\n * @title 按钮属性、状态\r\n * @description 按钮属性、状态 [isSubmit 是否作为form的提交按钮]\r\n * \r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo5 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\" isSubmit={true}>Default</Button>\r\n                <Button colors=\"primary\" disabled>disabled</Button>\r\n                <Button shape=\"border\">border</Button>\r\n                <Button colors=\"primary\" shape=\"round\">round</Button> \r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 按钮属性、状态 [isSubmit 是否作为form的提交按钮]" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 事件按钮", "code": "/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo2 extends Component {\r\n    constructor(props) {\r\n        super(props);\r\n    }\r\n\r\n    handleClick() {\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 点击按钮触发事件", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 不同颜色的按钮", "code": "/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                    <Button colors=\"dark\">dark</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"info\">info</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n                    <Button shape=\"border\" colors=\"dark\">dark</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`colors`属性控制按钮颜色", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo5, null), "title": " 不同大小的按钮", "code": "/**\r\n *\r\n * @title 不同大小的按钮\r\n * @description 通过`size`属性控制按钮大小\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`size`属性控制按钮大小", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #e0e0e0;\r\n  }\r\n}" }];
+	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(85);var Demo3 = __webpack_require__(86);var Demo4 = __webpack_require__(89);var Demo5 = __webpack_require__(90);var Demo7 = __webpack_require__(91);var Demo8 = __webpack_require__(92);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮", "code": "/**\r\n *\r\n * @title 默认按钮\r\n * @description 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\">主按钮</Button>\r\n                <Button colors=\"secondary\">次按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 主按钮、次按钮用于按钮组合中的寓意[eg: 弹框中 确定，取消]", "scss_code": ".demoPadding{\r\n  button{\r\n    margin: auto 5px;\r\n  }\r\n  .divider{\r\n    margin: 6px 0;\r\n    height: 1px;\r\n    overflow: hidden;\r\n    background-color: #fff;\r\n  }\r\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 按钮属性、状态", "code": "/**\r\n *\r\n * @title 按钮属性、状态\r\n * @description 按钮属性、状态 [isSubmit 是否作为form的提交按钮]\r\n * \r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo5 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\" isSubmit={true}>Default</Button>\r\n                <Button disabled>disabled</Button>\r\n                <Button bordered>border</Button>\r\n                <Button colors=\"primary\" shape=\"round\">round</Button> \r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 按钮属性、状态 [isSubmit 是否作为form的提交按钮]" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 图标按钮", "code": "/**\r\n *\r\n * @title 图标按钮\r\n * @description 当需要在 Button 内嵌入图标时，可以在 Button 内使用 Icon 组件。\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button, Icon } from 'tinper-bee';\r\n\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\" shape=\"icon\"><Icon type='uf-search' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-search' />Search</Button>\r\n                <Button colors=\"secondary\" shape=\"icon\"><Icon type='uf-del' /></Button>\r\n                <Button colors=\"secondary\"><Icon type='uf-del' />Delete</Button>\r\n                <Button colors=\"info\" shape=\"icon\"><Icon type='uf-cloud-up' /></Button>\r\n                <Button colors=\"info\"><Icon type='uf-cloud-up' />Upload</Button>\r\n                <Button shape=\"icon\" bordered><Icon type='uf-pencil' /></Button>\r\n                <Button bordered><Icon type='uf-pencil' />Edit</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 当需要在 Button 内嵌入图标时，可以在 Button 内使用 Icon 组件。" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 按钮尺寸", "code": "/**\r\n *\r\n * @title 按钮尺寸\r\n * @description 按钮有小、中、大、巨大四种尺寸。通过设置 size 为 sm、lg、xg 分别把按钮设为小、大、巨大尺寸。若不设置 size，则尺寸为中。\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button size=\"sm\" colors=\"primary\">小按钮</Button>\r\n                <Button colors=\"primary\">默认</Button>\r\n                <Button size=\"lg\" colors=\"primary\">大按钮</Button>\r\n                <Button size=\"xg\" colors=\"primary\">巨大按钮</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 按钮有小、中、大、巨大四种尺寸。通过设置 size 为 sm、lg、xg 分别把按钮设为小、大、巨大尺寸。若不设置 size，则尺寸为中。" }, { "example": _react2['default'].createElement(Demo5, null), "title": " 不同颜色的按钮", "code": "/**\r\n *\r\n * @title 不同颜色的按钮\r\n * @description 通过`colors`属性控制按钮颜色\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                    <Button colors=\"primary\">primary</Button>\r\n                    <Button colors=\"success\">success</Button>\r\n                    <Button colors=\"info\">info</Button>\r\n                    <Button colors=\"warning\">warning</Button>\r\n                    <Button colors=\"danger\">danger</Button>\r\n                    <Button colors=\"dark\">dark</Button>\r\n                <div className=\"divider\"></div>\r\n                    <Button shape=\"border\" colors=\"primary\">primary</Button>\r\n                    <Button shape=\"border\" colors=\"success\">success</Button>\r\n                    <Button shape=\"border\" colors=\"info\">info</Button>\r\n                    <Button shape=\"border\" colors=\"warning\">warning</Button>\r\n                    <Button shape=\"border\" colors=\"danger\">danger</Button>\r\n                    <Button shape=\"border\" colors=\"dark\">dark</Button>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过`colors`属性控制按钮颜色" }, { "example": _react2['default'].createElement(Demo7, null), "title": " 不可用状态", "code": "/**\r\n *\r\n * @title 不可用状态\r\n * @description 通过添加disabled属性可将按钮设置为不可用状态。\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button, Icon } from 'tinper-bee';\r\n\n\r\nclass Demo4 extends Component {\r\n    render () {\r\n        return (\r\n            <div className=\"demoPadding\">\r\n                <Button colors=\"primary\">primary</Button>\r\n                <Button colors=\"primary\" disabled>primary(disabled)</Button>\r\n                <div className=\"divider\"></div>\r\n                <Button colors=\"success\">success</Button>\r\n                <Button colors=\"success\" disabled>success(disabled)</Button>\r\n                <div className=\"divider\"></div>\r\n                <Button colors=\"info\">info</Button>\r\n                <Button colors=\"info\" disabled>info(disabled)</Button>\r\n                <div className=\"divider\"></div>\r\n                <Button colors=\"warning\">warning</Button>\r\n                <Button colors=\"warning\" disabled>warning(disabled)</Button>\r\n                <div className=\"divider\"></div>\r\n                <Button colors=\"dark\">dark</Button>\r\n                <Button colors=\"dark\" disabled>dark(disabled)</Button>\r\n                <div className=\"divider\"></div>\r\n                <Button bordered>border</Button>\r\n                <Button bordered disabled>border(disabled)</Button> \r\n                <div className=\"divider\"></div>\r\n            </div>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 通过添加disabled属性可将按钮设置为不可用状态。" }, { "example": _react2['default'].createElement(Demo8, null), "title": " 事件按钮", "code": "/**\r\n *\r\n * @title 事件按钮\r\n * @description 点击按钮触发事件\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport { Button } from 'tinper-bee';\r\n\r\n class Demo2 extends Component {\r\n    constructor(props) {\r\n        super(props);\r\n    }\r\n\r\n    handleClick() {\r\n        alert(\"谢谢你点我\")\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            <Button colors=\"primary\" onClick={ this.handleClick }>事件按钮</Button>\r\n        )\r\n    }\r\n}\r\n\r\n", "desc": " 点击按钮触发事件" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -7962,7 +7962,9 @@
 	        if (colorsMap[colors]) {
 	            clsObj[clsPrefix + '-' + colorsMap[colors]] = true;
 	        }
-	        //clsObj[`${clsPrefix}-border`] = bordered;
+	        if (bordered) {
+	            clsObj[clsPrefix + '-border'] = bordered;
+	        }
 	        var classes = (0, _classnames2['default'])(clsPrefix, clsObj);
 	        return _react2['default'].createElement(
 	            'button',
@@ -8102,12 +8104,12 @@
 	            ),
 	            _react2['default'].createElement(
 	                _src2['default'],
-	                { colors: 'primary', disabled: true },
+	                { disabled: true },
 	                'disabled'
 	            ),
 	            _react2['default'].createElement(
 	                _src2['default'],
-	                { shape: 'border' },
+	                { bordered: true },
 	                'border'
 	            ),
 	            _react2['default'].createElement(
@@ -8126,6 +8128,523 @@
 
 /***/ }),
 /* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _src = __webpack_require__(82);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	var _beeIcon = __webpack_require__(87);
+	
+	var _beeIcon2 = _interopRequireDefault(_beeIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 图标按钮
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 当需要在 Button 内嵌入图标时，可以在 Button 内使用 Icon 组件。
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var Demo4 = function (_Component) {
+	    _inherits(Demo4, _Component);
+	
+	    function Demo4() {
+	        _classCallCheck(this, Demo4);
+	
+	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+	    }
+	
+	    Demo4.prototype.render = function render() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'demoPadding' },
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary', shape: 'icon' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-search' })
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-search' }),
+	                'Search'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'secondary', shape: 'icon' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-del' })
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'secondary' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-del' }),
+	                'Delete'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'info', shape: 'icon' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-cloud-up' })
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'info' },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-cloud-up' }),
+	                'Upload'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'icon', bordered: true },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-pencil' })
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { bordered: true },
+	                _react2['default'].createElement(_beeIcon2['default'], { type: 'uf-pencil' }),
+	                'Edit'
+	            )
+	        );
+	    };
+	
+	    return Demo4;
+	}(_react.Component);
+	
+	exports['default'] = Demo4;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Icon = __webpack_require__(88);
+	
+	var _Icon2 = _interopRequireDefault(_Icon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	
+	exports["default"] = _Icon2["default"];
+	module.exports = exports['default'];
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _classnames = __webpack_require__(3);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	var _propTypes = __webpack_require__(5);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+	
+	var propTypes = {
+		type: _propTypes2["default"].string
+	
+	};
+	/**
+	 *  badge 默认显示内容1
+	 */
+	var defaultProps = {
+		clsPrefix: 'uf'
+	};
+	
+	var Icon = function (_Component) {
+		_inherits(Icon, _Component);
+	
+		function Icon(props) {
+			_classCallCheck(this, Icon);
+	
+			return _possibleConstructorReturn(this, _Component.call(this, props));
+		}
+	
+		Icon.prototype.render = function render() {
+			var _props = this.props,
+			    type = _props.type,
+			    className = _props.className,
+			    clsPrefix = _props.clsPrefix,
+			    others = _objectWithoutProperties(_props, ['type', 'className', 'clsPrefix']);
+	
+			var clsObj = {};
+	
+			var classNames = (0, _classnames2["default"])(clsPrefix, type);
+	
+			return _react2["default"].createElement('i', _extends({}, others, { className: (0, _classnames2["default"])(classNames, className) }));
+		};
+	
+		return Icon;
+	}(_react.Component);
+	
+	Icon.defaultProps = defaultProps;
+	Icon.propTypes = propTypes;
+	
+	exports["default"] = Icon;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _src = __webpack_require__(82);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 按钮尺寸
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 按钮有小、中、大、巨大四种尺寸。通过设置 size 为 sm、lg、xg 分别把按钮设为小、大、巨大尺寸。若不设置 size，则尺寸为中。
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var Demo4 = function (_Component) {
+	    _inherits(Demo4, _Component);
+	
+	    function Demo4() {
+	        _classCallCheck(this, Demo4);
+	
+	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+	    }
+	
+	    Demo4.prototype.render = function render() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'demoPadding' },
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { size: 'sm', colors: 'primary' },
+	                '\u5C0F\u6309\u94AE'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary' },
+	                '\u9ED8\u8BA4'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { size: 'lg', colors: 'primary' },
+	                '\u5927\u6309\u94AE'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { size: 'xg', colors: 'primary' },
+	                '\u5DE8\u5927\u6309\u94AE'
+	            )
+	        );
+	    };
+	
+	    return Demo4;
+	}(_react.Component);
+	
+	exports['default'] = Demo4;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _src = __webpack_require__(82);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 不同颜色的按钮
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 通过`colors`属性控制按钮颜色
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var Demo3 = function (_Component) {
+	    _inherits(Demo3, _Component);
+	
+	    function Demo3() {
+	        _classCallCheck(this, Demo3);
+	
+	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+	    }
+	
+	    Demo3.prototype.render = function render() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'demoPadding' },
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary' },
+	                'primary'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'success' },
+	                'success'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'info' },
+	                'info'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'warning' },
+	                'warning'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'danger' },
+	                'danger'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'dark' },
+	                'dark'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'primary' },
+	                'primary'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'success' },
+	                'success'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'info' },
+	                'info'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'warning' },
+	                'warning'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'danger' },
+	                'danger'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { shape: 'border', colors: 'dark' },
+	                'dark'
+	            )
+	        );
+	    };
+	
+	    return Demo3;
+	}(_react.Component);
+	
+	exports['default'] = Demo3;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _src = __webpack_require__(82);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	var _beeIcon = __webpack_require__(87);
+	
+	var _beeIcon2 = _interopRequireDefault(_beeIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 不可用状态
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 通过添加disabled属性可将按钮设置为不可用状态。
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var Demo4 = function (_Component) {
+	    _inherits(Demo4, _Component);
+	
+	    function Demo4() {
+	        _classCallCheck(this, Demo4);
+	
+	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+	    }
+	
+	    Demo4.prototype.render = function render() {
+	        return _react2['default'].createElement(
+	            'div',
+	            { className: 'demoPadding' },
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary' },
+	                'primary'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'primary', disabled: true },
+	                'primary(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'success' },
+	                'success'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'success', disabled: true },
+	                'success(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'info' },
+	                'info'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'info', disabled: true },
+	                'info(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'warning' },
+	                'warning'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'warning', disabled: true },
+	                'warning(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'dark' },
+	                'dark'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { colors: 'dark', disabled: true },
+	                'dark(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' }),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { bordered: true },
+	                'border'
+	            ),
+	            _react2['default'].createElement(
+	                _src2['default'],
+	                { bordered: true, disabled: true },
+	                'border(disabled)'
+	            ),
+	            _react2['default'].createElement('div', { className: 'divider' })
+	        );
+	    };
+	
+	    return Demo4;
+	}(_react.Component);
+	
+	exports['default'] = Demo4;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8182,187 +8701,6 @@
 	}(_react.Component);
 	
 	exports['default'] = Demo2;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _src = __webpack_require__(82);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 不同颜色的按钮
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 通过`colors`属性控制按钮颜色
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	var Demo3 = function (_Component) {
-	    _inherits(Demo3, _Component);
-	
-	    function Demo3() {
-	        _classCallCheck(this, Demo3);
-	
-	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
-	    }
-	
-	    Demo3.prototype.render = function render() {
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'demoPadding' },
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'success' },
-	                'success'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'info' },
-	                'info'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'warning' },
-	                'warning'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'danger' },
-	                'danger'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'dark' },
-	                'dark'
-	            ),
-	            _react2['default'].createElement('div', { className: 'divider' }),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { shape: 'border', colors: 'success' },
-	                'success'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { shape: 'border', colors: 'info' },
-	                'info'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { shape: 'border', colors: 'warning' },
-	                'warning'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { shape: 'border', colors: 'danger' },
-	                'danger'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { shape: 'border', colors: 'dark' },
-	                'dark'
-	            )
-	        );
-	    };
-	
-	    return Demo3;
-	}(_react.Component);
-	
-	exports['default'] = Demo3;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _src = __webpack_require__(82);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 不同大小的按钮
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 通过`size`属性控制按钮大小
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	var Demo4 = function (_Component) {
-	    _inherits(Demo4, _Component);
-	
-	    function Demo4() {
-	        _classCallCheck(this, Demo4);
-	
-	        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
-	    }
-	
-	    Demo4.prototype.render = function render() {
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'demoPadding' },
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { size: 'sm', colors: 'primary' },
-	                '\u5C0F\u6309\u94AE'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { colors: 'primary' },
-	                '\u9ED8\u8BA4'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { size: 'lg', colors: 'primary' },
-	                '\u5927\u6309\u94AE'
-	            ),
-	            _react2['default'].createElement(
-	                _src2['default'],
-	                { size: 'xg', colors: 'primary' },
-	                '\u5DE8\u5927\u6309\u94AE'
-	            )
-	        );
-	    };
-	
-	    return Demo4;
-	}(_react.Component);
-	
-	exports['default'] = Demo4;
 	module.exports = exports['default'];
 
 /***/ })

@@ -47,12 +47,24 @@ $font-size-md: 14px;
       border-color: $button-focus-border-color;
     }
   }
-  &.disable{
-    -webkit-box-shadow: none;
-    filter: alpha(opacity=65);
-    box-shadow: none;
+  &.disable,&.u-button[disabled]{
     cursor: not-allowed;
-    opacity: .65;
+      background-color: #DFE1E6;
+      border-color: #DFE1E6;
+      color: #fff;
+    &:hover,&:active,&:focus{
+      background-color: #DFE1E6;
+      border-color: #DFE1E6;
+      color: #fff;
+    }
+    // -webkit-box-shadow: none;
+    // filter: alpha(opacity=35);
+    // box-shadow: none;
+    // opacity: .35;
+  }
+  &:not(.u-button-icon) i.uf{
+    padding-left: 0;
+    line-height: normal;
   }
 }
 
@@ -93,9 +105,12 @@ input.u-button[type="submit"] {
 
 .u-button.disabled, .u-button[disabled] {
     cursor: not-allowed;
-    opacity: .65;
-    filter: alpha(opacity=65);
-    box-shadow: none;
+    background-color: #DFE1E6;
+    border-color: #DFE1E6;
+    color: #fff;
+    // opacity: .35;
+    // filter: alpha(opacity=35);
+    // box-shadow: none;
 }
 
 .u-button-default {

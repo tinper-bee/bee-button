@@ -5263,7 +5263,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   background: rgb(224,224,224);
   border: 1px solid rgb(224,224,224);
   border-radius: 3px;
-  color: rgb(0,0,0);
+  color: rgb(33,33,33);
   position: relative;
   min-width: 72px;
   padding: 4px 13px;
@@ -5294,12 +5294,18 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
     .u-button.colored:focus:not(:active) {
       background-color: rgb(238,238,238);
       border-color: rgb(189,189,189); }
-  .u-button.disable {
-    -webkit-box-shadow: none;
-    filter: alpha(opacity=65);
-    box-shadow: none;
+  .u-button.disable, .u-button.u-button[disabled] {
     cursor: not-allowed;
-    opacity: .65; }
+    background-color: #DFE1E6;
+    border-color: #DFE1E6;
+    color: #fff; }
+    .u-button.disable:hover, .u-button.disable:active, .u-button.disable:focus, .u-button.u-button[disabled]:hover, .u-button.u-button[disabled]:active, .u-button.u-button[disabled]:focus {
+      background-color: #DFE1E6;
+      border-color: #DFE1E6;
+      color: #fff; }
+  .u-button:not(.u-button-icon) i.uf {
+    padding-left: 0;
+    line-height: normal; }
 
 input.u-button[type="submit"] {
   -webkit-appearance: none; }
@@ -5327,9 +5333,9 @@ input.u-button[type="submit"] {
 
 .u-button.disabled, .u-button[disabled] {
   cursor: not-allowed;
-  opacity: .65;
-  filter: alpha(opacity=65);
-  box-shadow: none; }
+  background-color: #DFE1E6;
+  border-color: #DFE1E6;
+  color: #fff; }
 
 .u-button-default {
   color: #333;
@@ -5340,15 +5346,15 @@ input.u-button[type="submit"] {
     border-color: #adadad; }
 
 .u-button-border {
-  color: rgb(0,0,0);
+  color: rgb(33,33,33);
   border: 1px solid rgb(165, 173, 186);
   background: rgb(255,255,255); }
   .u-button-border:hover {
-    color: rgb(0,0,0);
+    color: rgb(33,33,33);
     background-color: rgb(238,238,238);
     border-color: rgb(165, 173, 186); }
   .u-button-border:active {
-    color: rgb(0,0,0);
+    color: rgb(33,33,33);
     background-color: rgb(238,238,238);
     border-color: rgb(165, 173, 186); }
 
@@ -5359,7 +5365,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-primary:hover {
     background-color: rgb(230, 0, 18);
     border-color: rgb(230, 0, 18); }
-  .u-button.u-button-primary.focus, .u-button.u-button-primary:focus, .u-button.u-button-primary.u-button[disabled]:hover {
+  .u-button.u-button-primary.focus, .u-button.u-button-primary:focus:hover {
     background-color: rgb(245, 60, 50);
     border-color: rgb(245, 60, 50); }
   .u-button.u-button-primary.active, .u-button.u-button-primary:active {
@@ -5367,13 +5373,13 @@ input.u-button[type="submit"] {
     border-color: rgb(230, 0, 18); }
 
 .u-button.u-button-secondary {
-  color: rgb(0,0,0);
+  color: rgb(33,33,33);
   background-color: rgb(224,224,224);
   border: 1px rgb(224,224,224) solid; }
   .u-button.u-button-secondary:hover {
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
-  .u-button.u-button-secondary.focus, .u-button.u-button-secondary:focus, .u-button.u-button-secondary.u-button[disabled]:hover {
+  .u-button.u-button-secondary.focus, .u-button.u-button-secondary:focus:hover {
     background-color: rgb(224,224,224);
     border-color: rgb(224,224,224); }
   .u-button.u-button-secondary.active, .u-button.u-button-secondary:active {
@@ -5387,7 +5393,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-danger:hover {
     background-color: rgb(211,47,47);
     border-color: rgb(211,47,47); }
-  .u-button.u-button-danger.focus, .u-button.u-button-danger:focus, .u-button.u-button-danger.u-button[disabled]:hover {
+  .u-button.u-button-danger.focus, .u-button.u-button-danger:focus:hover {
     background-color: rgb(244,67,54);
     border-color: rgb(244,67,54); }
   .u-button.u-button-danger.active, .u-button.u-button-danger:active {
@@ -5401,7 +5407,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-info:hover {
     background-color: rgb(0,151,167);
     border-color: rgb(0,151,167); }
-  .u-button.u-button-info.focus, .u-button.u-button-info:focus, .u-button.u-button-info.u-button[disabled]:hover {
+  .u-button.u-button-info.focus, .u-button.u-button-info:focus:hover {
     background-color: rgb(0,188,212);
     border-color: rgb(0,188,212); }
   .u-button.u-button-info.active, .u-button.u-button-info:active {
@@ -5415,7 +5421,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-warning:hover {
     background-color: rgb(245,124,0);
     border-color: rgb(245,124,0); }
-  .u-button.u-button-warning.focus, .u-button.u-button-warning:focus, .u-button.u-button-warning.u-button[disabled]:hover {
+  .u-button.u-button-warning.focus, .u-button.u-button-warning:focus:hover {
     background-color: rgb(255,152,0);
     border-color: rgb(255,152,0); }
   .u-button.u-button-warning.active, .u-button.u-button-warning:active {
@@ -5429,7 +5435,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-success:hover {
     background-color: rgb(56,142,60);
     border-color: rgb(56,142,60); }
-  .u-button.u-button-success.focus, .u-button.u-button-success:focus, .u-button.u-button-success.u-button[disabled]:hover {
+  .u-button.u-button-success.focus, .u-button.u-button-success:focus:hover {
     background-color: rgb(76,175,80);
     border-color: rgb(76,175,80); }
   .u-button.u-button-success.active, .u-button.u-button-success:active {
@@ -5443,7 +5449,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-dark:hover {
     background-color: rgb(66,66,66);
     border-color: rgb(66,66,66); }
-  .u-button.u-button-dark.focus, .u-button.u-button-dark:focus, .u-button.u-button-dark.u-button[disabled]:hover {
+  .u-button.u-button-dark.focus, .u-button.u-button-dark:focus:hover {
     background-color: rgb(97,97,97);
     border-color: rgb(97,97,97); }
   .u-button.u-button-dark.active, .u-button.u-button-dark:active {
@@ -5457,7 +5463,7 @@ input.u-button[type="submit"] {
   .u-button.u-button-light:hover {
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189); }
-  .u-button.u-button-light.focus, .u-button.u-button-light:focus, .u-button.u-button-light.u-button[disabled]:hover {
+  .u-button.u-button-light.focus, .u-button.u-button-light:focus:hover {
     background-color: rgb(255,255,255);
     border-color: rgb(255,255,255); }
   .u-button.u-button-light.active, .u-button.u-button-light:active {
@@ -5472,7 +5478,7 @@ input.u-button[type="submit"] {
     background-color: rgb(56,142,60);
     border-color: rgb(56,142,60);
     color: #fff; }
-  .u-button-border.u-button-success.focus, .u-button-border.u-button-success:focus, .u-button-border.u-button-success.u-button[disabled]:hover {
+  .u-button-border.u-button-success.focus, .u-button-border.u-button-success:focus:hover {
     color: rgb(76,175,80);
     background-color: #fff;
     border-color: rgb(76,175,80); }
@@ -5489,7 +5495,7 @@ input.u-button[type="submit"] {
     background-color: rgb(245,124,0);
     border-color: rgb(245,124,0);
     color: #fff; }
-  .u-button-border.u-button-warning.focus, .u-button-border.u-button-warning:focus, .u-button-border.u-button-warning.u-button[disabled]:hover {
+  .u-button-border.u-button-warning.focus, .u-button-border.u-button-warning:focus:hover {
     color: rgb(255,152,0);
     background-color: #fff;
     border-color: rgb(255,152,0); }
@@ -5506,7 +5512,7 @@ input.u-button[type="submit"] {
     background-color: rgb(211,47,47);
     border-color: rgb(211,47,47);
     color: #fff; }
-  .u-button-border.u-button-danger.focus, .u-button-border.u-button-danger:focus, .u-button-border.u-button-danger.u-button[disabled]:hover {
+  .u-button-border.u-button-danger.focus, .u-button-border.u-button-danger:focus:hover {
     color: rgb(244,67,54);
     background-color: #fff;
     border-color: rgb(244,67,54); }
@@ -5523,7 +5529,7 @@ input.u-button[type="submit"] {
     background-color: rgb(0,151,167);
     border-color: rgb(0,151,167);
     color: #fff; }
-  .u-button-border.u-button-info.focus, .u-button-border.u-button-info:focus, .u-button-border.u-button-info.u-button[disabled]:hover {
+  .u-button-border.u-button-info.focus, .u-button-border.u-button-info:focus:hover {
     color: rgb(0,188,212);
     background-color: #fff;
     border-color: rgb(0,188,212); }
@@ -5540,7 +5546,7 @@ input.u-button[type="submit"] {
     background-color: rgb(230, 0, 18);
     border-color: rgb(230, 0, 18);
     color: #fff; }
-  .u-button-border.u-button-primary.focus, .u-button-border.u-button-primary:focus, .u-button-border.u-button-primary.u-button[disabled]:hover {
+  .u-button-border.u-button-primary.focus, .u-button-border.u-button-primary:focus:hover {
     color: rgb(245, 60, 50);
     background-color: #fff;
     border-color: rgb(245, 60, 50); }
@@ -5557,7 +5563,7 @@ input.u-button[type="submit"] {
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189);
     color: #fff; }
-  .u-button-border.u-button-secondary.focus, .u-button-border.u-button-secondary:focus, .u-button-border.u-button-secondary.u-button[disabled]:hover {
+  .u-button-border.u-button-secondary.focus, .u-button-border.u-button-secondary:focus:hover {
     color: rgb(224,224,224);
     background-color: #fff;
     border-color: rgb(224,224,224); }
@@ -5574,7 +5580,7 @@ input.u-button[type="submit"] {
     background-color: rgb(66,66,66);
     border-color: rgb(66,66,66);
     color: #fff; }
-  .u-button-border.u-button-dark.focus, .u-button-border.u-button-dark:focus, .u-button-border.u-button-dark.u-button[disabled]:hover {
+  .u-button-border.u-button-dark.focus, .u-button-border.u-button-dark:focus:hover {
     color: rgb(97,97,97);
     background-color: #fff;
     border-color: rgb(97,97,97); }
@@ -5591,7 +5597,7 @@ input.u-button[type="submit"] {
     background-color: rgb(189,189,189);
     border-color: rgb(189,189,189);
     color: #fff; }
-  .u-button-border.u-button-light.focus, .u-button-border.u-button-light:focus, .u-button-border.u-button-light.u-button[disabled]:hover {
+  .u-button-border.u-button-light.focus, .u-button-border.u-button-light:focus:hover {
     color: rgb(97,97,97);
     background-color: #fff;
     border-color: rgb(255,255,255); }
@@ -6367,7 +6373,7 @@ input.u-button[type="submit"] {
   margin: 6px 0;
   height: 1px;
   overflow: hidden;
-  background-color: #e0e0e0; }
+  background-color: #fff; }
 
 .demoPadding button {
   margin: auto 5px; }
@@ -6376,33 +6382,6 @@ input.u-button[type="submit"] {
   margin: 6px 0;
   height: 1px;
   overflow: hidden;
-  background-color: #e0e0e0; }
-
-.demoPadding button {
-  margin: auto 5px; }
-
-.demoPadding .divider {
-  margin: 6px 0;
-  height: 1px;
-  overflow: hidden;
-  background-color: #e0e0e0; }
-
-.demoPadding button {
-  margin: auto 5px; }
-
-.demoPadding .divider {
-  margin: 6px 0;
-  height: 1px;
-  overflow: hidden;
-  background-color: #e0e0e0; }
-
-.demoPadding button {
-  margin: auto 5px; }
-
-.demoPadding .divider {
-  margin: 6px 0;
-  height: 1px;
-  overflow: hidden;
-  background-color: #e0e0e0; }
+  background-color: #fff; }
 
 /*# sourceMappingURL=demo.css.map */

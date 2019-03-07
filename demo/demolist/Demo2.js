@@ -13,8 +13,8 @@ import Button from '../../src';
         return (
             <div className="demoPadding">
                 <Button colors="primary" isSubmit={true}>Default</Button>
-                <Button colors="primary" disabled>disabled</Button>
-                <Button shape="border">border</Button>
+                <Button disabled>disabled</Button>
+                <Button bordered>border</Button>
                 <Button colors="primary" shape="round">round</Button> 
             </div>
         )

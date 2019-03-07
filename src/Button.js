@@ -108,7 +108,9 @@ class Button extends Component {
         if (colorsMap[colors]) {
             clsObj[`${clsPrefix}-${colorsMap[colors]}`] = true;
         }
-        //clsObj[`${clsPrefix}-border`] = bordered;
+        if(bordered){
+            clsObj[`${clsPrefix}-border`] = bordered;
+        }
         let classes = classnames(clsPrefix, clsObj);
         return (
             <button

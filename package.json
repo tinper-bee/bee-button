@@ -49,6 +49,7 @@
   "babel-runtime": "^6.26.0",
   "bee-icon": "latest",
   "bee-layout": "latest",
+  "bee-modal": "latest",
   "bee-panel": "latest",
   "chai": "^3.5.0",
   "console-polyfill": "~0.2.1",

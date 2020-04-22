@@ -1,3 +1,7 @@
+## [2.0.13](https://github.com/tinper-bee/button/compare/v2.0.12...v2.0.13) (2020-04-22)
+
+
+
 <a name="2.0.12"></a>
 ## [2.0.12](https://github.com/tinper-bee/button/compare/v2.0.11...v2.0.12) (2020-04-22)
 

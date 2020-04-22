@@ -4,19 +4,19 @@ on:
     - 'v*'
 name: Publish
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-    - run: npm i -g bee-tools-test
-    - run: npm i
-    - run: npm test
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - uses: actions/setup-node@v1
+  #     with:
+  #       node-version: 12
+  #   - run: npm i -g bee-tools-test
+  #   - run: npm i
+  #   - run: npm test
 
   publish:
-    needs: test
+    # needs: test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

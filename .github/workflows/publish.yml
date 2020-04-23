@@ -44,4 +44,3 @@ jobs:
     - run: conventional-github-releaser -p angular
       env:
         CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - uses: iuap-design/actions-ynpm-sync@master

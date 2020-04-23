@@ -1,3 +1,12 @@
+## [2.0.17](https://github.com/tinper-bee/button/compare/v2.0.16...v2.0.17) (2020-04-23)
+
+
+### Bug Fixes
+
+* use GITHUB_TOKEN for CONVENTIONAL_GITHUB_RELEASER_TOKEN ([8194681](https://github.com/tinper-bee/button/commit/81946812f4e1e570cd0688d92a54f51e26515152))
+
+
+
 ## [2.0.16](https://github.com/tinper-bee/button/compare/v2.0.15...v2.0.16) (2020-04-23)
 
 

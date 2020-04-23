@@ -1,3 +1,12 @@
+## [2.0.18](https://github.com/tinper-bee/button/compare/v2.0.17...v2.0.18) (2020-04-23)
+
+
+### Features
+
+* support auto deploy with github actions ([d341aa6](https://github.com/tinper-bee/button/commit/d341aa6b8012de00612c7a86e32ba90fce9acf7a))
+
+
+
 ## [2.0.17](https://github.com/tinper-bee/button/compare/v2.0.16...v2.0.17) (2020-04-23)
 
 

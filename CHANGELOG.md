@@ -1,3 +1,12 @@
+## [2.0.19](https://github.com/tinper-bee/button/compare/v2.0.18...v2.0.19) (2020-04-23)
+
+
+### Bug Fixes
+
+* attach changelog to github releases ([e9d3ecc](https://github.com/tinper-bee/button/commit/e9d3ecc27c5ba623bdb494959100206b1b72d7e2))
+
+
+
 ## [2.0.18](https://github.com/tinper-bee/button/compare/v2.0.17...v2.0.18) (2020-04-23)
 
 

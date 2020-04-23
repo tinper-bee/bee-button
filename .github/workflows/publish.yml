@@ -40,7 +40,7 @@ jobs:
       with:
         node-version: 10
         registry-url: https://registry.npmjs.org/
-    - run: npm i -g conventional-github-releaser
-    - run: conventional-github-releaser -p angular
+    - run: npm i -g github-release-from-changelog
+    - run: github-release-from-changelog
       env:
-        CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
